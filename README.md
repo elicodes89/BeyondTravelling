@@ -1,2 +1,2 @@
 # BeyondTravelling
-Capstone Project - Built using Java, React, JavaScript, MongoDB and our own API.
+Capstone Project - Built using Java, React, JavaScript, Spring and our own API.
