@@ -27,17 +27,21 @@ public class Hotel {
     @Column(name = "latitude")
     private String latitude;
 
+    @Column(name = "address")
+    private String address;
+
     @JsonIgnoreProperties({"hotels"})
     @ManyToOne
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, City city) {
+    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
         this.website = website;
         this.longitude = longitude;
         this.latitude = latitude;
+        this.address = address;
         this.city = city;
     }
 
@@ -98,6 +102,14 @@ public class Hotel {
 
     public void setCity(City city) {
         this.city = city;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
 
