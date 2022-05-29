@@ -1,5 +1,7 @@
 package com.codeClan.example.BeyondTravelling.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
@@ -25,12 +27,18 @@ public class Hotel {
     @Column(name = "latitude")
     private String latitude;
 
-    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude) {
+    @JsonIgnoreProperties({"hotels"})
+    @ManyToOne
+    @JoinColumn(name = "city_id", nullable = false)
+    private City city;
+
+    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, City city) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
         this.website = website;
         this.longitude = longitude;
         this.latitude = latitude;
+        this.city = city;
     }
 
     public Hotel() {
@@ -82,6 +90,14 @@ public class Hotel {
 
     public void setLatitude(String latitude) {
         this.latitude = latitude;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
     }
 }
 

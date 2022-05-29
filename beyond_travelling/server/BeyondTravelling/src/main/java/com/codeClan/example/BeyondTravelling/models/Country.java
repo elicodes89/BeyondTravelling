@@ -1,6 +1,11 @@
 package com.codeClan.example.BeyondTravelling.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,11 +19,14 @@ public class Country {
     @Column(name = "name")
     private String name;
 
-//    private List<City> cityList;
-
+    @JsonIgnoreProperties({"country"})
+    @OneToMany(mappedBy = "country", fetch = FetchType.LAZY)
+    private List<City> cities;
 
     public Country(String name) {
         this.name = name;
+        this.cities  = new ArrayList<>();
+
     }
 
     public Country() {
@@ -38,5 +46,13 @@ public class Country {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(List<City> cities) {
+        this.cities = cities;
     }
 }
