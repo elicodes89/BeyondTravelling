@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+/* .wheelchair{
+  width: 10rem;
+  height: 10rem;
+}
+
+.bsl_sign{
+  width: 10rem;
+  height: 10rem;
+} */
+
+flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.flex-container > img{
+  width: 300px;
+  height: 300px;
+  display: ;
+  /* flex-shrink: 1; */
+}
