@@ -29,11 +29,11 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) {
 
         // List of the countries
-        Country country1 = new Country("Scotland");
+        Country country1 = new Country("Scotland"); //done
         countryRepository.save(country1);
-        Country country2 = new Country("England");
+        Country country2 = new Country("England"); //done
         countryRepository.save(country2);
-        Country country3 = new Country("Wales");
+        Country country3 = new Country("Wales"); //done
         countryRepository.save(country3);
         Country country4 = new Country("Ireland"); //done
         countryRepository.save(country4);
@@ -47,7 +47,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city2);
         City city3 = new City("Inverness",country1); //done
         cityRepository.save(city3);
-        City city4 = new City("Dundee",country1);
+        City city4 = new City("Dundee",country1); //done
         cityRepository.save(city4);
 
         //This is the hotels in Edinburgh
@@ -70,14 +70,74 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel11 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city3);
         hotelRepository.save(hotel11);
 
+        //This is the cities in England
+        City city10 = new City("London",country2); //done
+        cityRepository.save(city10);
+        City city11 = new City("Manchester",country2); //done
+        cityRepository.save(city11);
+        City city12 = new City("Birmingham",country2);//done
+        cityRepository.save(city12);
+        City city13 = new City("Liverpool",country2);//done
+        cityRepository.save(city13);
+
+        //These are the hotels in London
+        Hotel hotel12 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10);
+        hotelRepository.save(hotel12);
+//        Hotel hotel13 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city10);
+//        hotelRepository.save(hotel13);
+
+        //This is the hotel in Manchester
+        Hotel hotel14 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11);
+        hotelRepository.save(hotel14);
+//        Hotel hotel15 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city11);
+//        hotelRepository.save(hotel15);
+
+        //These are the hotels in Birmingham
+        Hotel hotel16 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12);
+        hotelRepository.save(hotel16);
+//        Hotel hotel17 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city12);
+//        hotelRepository.save(hotel17);
+
+        //These are the hotels in Liverpool
+        Hotel hotel18 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13);
+        hotelRepository.save(hotel18);
+//        Hotel hotel19 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city13);
+//        hotelRepository.save(hotel19);
+
+        //This is the cities in Wales
+        City city14 = new City("Cardiff",country3);
+        cityRepository.save(city14);
+        City city15 = new City("Swansea",country3);
+        cityRepository.save(city15);
+        City city16 = new City("Newport",country3);
+        cityRepository.save(city16);
+
+        //These are the hotels in Cardiff
+        Hotel hotel20 = new Hotel("Cardiff1","020 3966 8654","google.com","-2.9624006001947434","56.465844944513066","Cardiff city",city14);
+        hotelRepository.save(hotel20);
+//        Hotel hotel21 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city14);
+//        hotelRepository.save(hotel21);
+
+        //These are the hotels in Swansea
+        Hotel hotel22 = new Hotel("Swansea","020 3966 8654","google.swansee.com","-2.9624006001947434","56.465844944513066","swansee eh45 kb",city15);
+        hotelRepository.save(hotel22);
+//        Hotel hotel23 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city15);
+//        hotelRepository.save(hotel23);
+
+        //These are the hotels in Newport
+        Hotel hotel24 = new Hotel("Newport","020 3966 8654","google.newport","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city16);
+        hotelRepository.save(hotel24);
+//        Hotel hotel25 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city16);
+//        hotelRepository.save(hotel25);
+
         //This is the cities in Ireland
-        City city5 = new City("Dublin",country4);
+        City city5 = new City("Dublin",country4);//done
         cityRepository.save(city5);
-        City city6 = new City("Belfast",country4);
+        City city6 = new City("Belfast",country4);//done
         cityRepository.save(city6);
-        City city7 = new City("Galway",country4);
+        City city7 = new City("Galway",country4);//done
         cityRepository.save(city7);
-        City city8 = new City("Donegal",country4);
+        City city8 = new City("Donegal",country4);//done
         cityRepository.save(city8);
 
         //This is the hotels in Ireland
