@@ -50,7 +50,6 @@ public class DataLoader implements ApplicationRunner {
         City city4 = new City("Dundee",country1);
         cityRepository.save(city4);
 
-
         //This is the hotels in Edinburgh
         Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1);
         hotelRepository.save(hotel5);
@@ -64,9 +63,12 @@ public class DataLoader implements ApplicationRunner {
         hotelRepository.save(hotel8);
 
         //This is the hotel in Inverness
-        Hotel hotel10 = new Hotel("Courtyard by Marriott Inverness Airport","800) 085-8179","https://www.marriott.co.uk","-4.065986557353875","57.53859107575739","Dalcross, Inverness, IV2 7BL, United Kingdom",city3);
+        Hotel hotel10 = new Hotel("Courtyard by Marriott Inverness Airport","(800) 085-8179","https://www.marriott.co.uk","-4.065986557353875","57.53859107575739","Dalcross, Inverness, IV2 7BL, United Kingdom",city3);
         hotelRepository.save(hotel10);
 
+        //This is the hotel in Dundee
+        Hotel hotel11 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city3);
+        hotelRepository.save(hotel11);
 
         //This is the cities in Ireland
         City city5 = new City("Dublin",country4);
