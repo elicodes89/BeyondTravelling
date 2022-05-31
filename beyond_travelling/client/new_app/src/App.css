@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-/* .wheelchair{
+.wheelchair{
   width: 10rem;
   height: 10rem;
 }
@@ -10,17 +10,22 @@
 .bsl_sign{
   width: 10rem;
   height: 10rem;
-} */
+}
 
-flex-container{
+/* flex-container{
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+} */
+
+.flex-container{
+
+  justify-items: center;
+  display: inline-flex;
+  position: ;
+  flex-direction: row;
+  justify-content: space-evenly;
+    /* flex-shrink: 1; */
 }
 
-.flex-container > img{
-  width: 300px;
-  height: 300px;
-  display: ;
-  /* flex-shrink: 1; */
-}
+

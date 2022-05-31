@@ -11,12 +11,18 @@ function App() {
     </div>
     
     <div className='flex-container'>
-
-    <img className="bsl_sign" src={require("./access_icons/signing1.jpeg")} alt='Signing'/>
+    <div>
+    <img className="bsl_sign" src={require("./access_icons/signingicon.jpeg")} alt='Signing'/>
+    </div>
+    <div>
     <img className="wheelchair" src={require("./access_icons/wheelchair.jpeg")} alt='Wheelchair'/>
     </div>
+<<<<<<< HEAD
     <MainPage />
     
+=======
+    </div>
+>>>>>>> 95120ea (Completed Bsl videos with captions)
     <footer>2022 - Created by Annika, Eli and Mate - </footer>
     </>
   );
