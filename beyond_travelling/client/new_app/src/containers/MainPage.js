@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 // import HotelDetail from '../components/bsl/HotelDetail';
 import HotelDetail from '../components/wheelchair/HotelDetail';
 import HotelList from '../components/wheelchair/HotelList';
-
 import './MainPage.css';
+import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
+
 
 const MainPage = () => {
     const [region, setRegions] = useState([]);
@@ -32,6 +33,7 @@ const MainPage = () => {
         <div className="main-container">
             <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
+            <AccessibleHotels />
             
         </div>
     )
