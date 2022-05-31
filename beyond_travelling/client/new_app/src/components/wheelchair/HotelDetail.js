@@ -7,6 +7,7 @@ const HotelDetail = ({region, onRegionClick}) => {
   }
 
   return <li onClick={handleClick}>{region.name}</li>
+  
 }
 
 export default HotelDetail;
