@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 // import HotelList from '../components/bsl/HotelList';
 // import HotelDetail from '../components/bsl/HotelDetail';
-import HotelDetail from '../components/wheelchair/HotelDetail';
-import HotelList from '../components/wheelchair/HotelList';
-import './MainPage.css';
-import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
+import HotelList from './HotelList';
+import HotelDetail from './HotelDetail';
+// import './MainPage.css';
 
 
 const AccessibleHotels = () => {
@@ -16,6 +15,7 @@ const AccessibleHotels = () => {
     }, [])
 
     const getRegions = function(){
+        console.log('fetch');
         fetch('http://localhost:8080/countries')
         .then(res => res.json())
         .then(regions => setRegions(regions))
@@ -33,7 +33,6 @@ const AccessibleHotels = () => {
         <div className="main-container">
             <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
-            <AccessibleHotels />
             
         </div>
     )
