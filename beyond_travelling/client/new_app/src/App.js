@@ -7,7 +7,6 @@ import Card from 'react-bootstrap/Card'
 
 
 function App() {
-  
 }
 
 export default App;
