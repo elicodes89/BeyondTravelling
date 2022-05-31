@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import HotelDetail from '../components/wheelchair/HotelDetail';
 import HotelList from '../components/wheelchair/HotelList';
 import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
+// import ReactPlayer from 'react-player/lazy';
 
 
 const BSL = () => {
@@ -33,7 +34,7 @@ const BSL = () => {
             <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
             <AccessibleHotels />
-            
+            {/* <ReactPlayer url={'HomepageIntroCC'} /> */}
         </div>
     )
 }

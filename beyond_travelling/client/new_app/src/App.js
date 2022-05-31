@@ -3,6 +3,7 @@ import './App.css';
 // import MainPage from './containers/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './containers/Home';
+import BSL from './components/bsl/BSL';
 // import Card from 'react-bootstrap/Card'
 
 
@@ -13,6 +14,7 @@ function App() {
         <>
         <h1>Hello</h1>
         <Home />
+        <BSL />
         </>
     )
 }
