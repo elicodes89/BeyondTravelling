@@ -7,18 +7,18 @@ function Header () {
 
 return (
    <>
-   <Navbar bg="light" variant="light">
+   <Navbar bg="dark" variant="dark">
     <Container>
       <Navbar.Brand href="#home">
         <img
           alt=""
-          src="/logo.svg"
+          src="./Travel_Agent_Logo.jpeg"
           width="30"
           height="30"
-          className="d-inline-block align-top"
+          // className="d-inline-block align-top"
         />{' '}
-      React Bootstrap
-      </Navbar.Brand>
+      Welcome to Beyond Travelling     
+       </Navbar.Brand>
     </Container>
   </Navbar>
    
