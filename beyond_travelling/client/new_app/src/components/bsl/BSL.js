@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 // import HotelList from '../components/bsl/HotelList';
 // import HotelDetail from '../components/bsl/HotelDetail';
-import HotelDetail from '../components/wheelchair/HotelDetail';
-import HotelList from '../components/wheelchair/HotelList';
-import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
-// import ReactPlayer from 'react-player/lazy';
+// import HotelDetail from '../components/wheelchair/HotelDetail';
+// import HotelList from '../components/wheelchair/HotelList';
+// import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
+import ReactPlayer from 'react-player';
 
 
 const BSL = () => {
@@ -14,6 +14,8 @@ const BSL = () => {
     useEffect(() => {
         getRegions();
     }, [])
+
+
 
     const getRegions = function(){
         fetch('http://localhost:8080/countries')
@@ -31,10 +33,21 @@ const BSL = () => {
 
     return (
         <div className="main-container">
-            <HotelList regions={region} onRegionClick={onRegionClick} />
+            {/* <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
-            <AccessibleHotels />
-            {/* <ReactPlayer url={'HomepageIntroCC'} /> */}
+            <AccessibleHotels /> */}
+
+
+            <ReactPlayer 
+            width='200px'
+            height='300px'
+            controls
+            url='src/caption_videos/HomepageIntroCC.mp4'
+            onReady={() => console.log('onReady callback')}
+            onStart={() => console.log('onStart callback')}
+            onPause={() => console.log('onPause callback')}
+            onEnded={() => console.log('onEnded callback')}
+            />
         </div>
     )
 }
