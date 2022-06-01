@@ -39,10 +39,10 @@ const BSL = () => {
 
 
             <ReactPlayer 
-            width='200px'
-            height='300px'
+            width='600px'
+            height='400px'
             controls
-            url='src/caption_videos/HomepageIntroCC.mp4'
+            url='https://www.youtube.com/watch?v=gMNHvXSW4iE'
             onReady={() => console.log('onReady callback')}
             onStart={() => console.log('onStart callback')}
             onPause={() => console.log('onPause callback')}
