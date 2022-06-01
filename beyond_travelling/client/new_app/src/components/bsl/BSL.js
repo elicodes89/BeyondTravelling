@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 // import HotelList from '../components/wheelchair/HotelList';
 // import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
 // import ReactPlayer from 'react-player';
-import video from './public/caption_videos.HomepageIntroCC.mp4'
+import video from '/Users/annikaneumann/codeclan_work/BeyondTravelling/beyond_travelling/client/new_app/src/caption_videos/HomepageIntroCC.mp4'
 
 
 const BSL = () => {
@@ -42,14 +42,13 @@ const BSL = () => {
     return (
         // <div>
         <div className="main-container">
-        <p>Hello</p>
             {/* <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
             <AccessibleHotels /> */}
 
             {/* <input type="video" onChange={handleVideoUpload} /> */}
 
-            <video width="750" height="500" controls>
+            <video width="750" height="500" controls autoPlay muted>
             <source src={video} type="video/mp4"/>
             </video>
 
