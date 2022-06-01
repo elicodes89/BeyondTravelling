@@ -8,8 +8,6 @@ import Header from './components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
-// import Card from 'react-bootstrap/Card'
-
 function App () {
 
   const [wheelchair, setWheelchair] = useState(false);
@@ -49,9 +47,16 @@ function App () {
         </>
       )
   }
-
-    
   
 };
+function App() {
+
+    return (
+        <>
+        <h1>Hello</h1>
+        <Home />
+        </>
+    )
+}
 
 export default App;
