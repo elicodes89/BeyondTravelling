@@ -18,6 +18,7 @@ function App () {
     return (
         <>
         <Home />
+        <br></br><br></br>
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
         <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button>
         <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>  
