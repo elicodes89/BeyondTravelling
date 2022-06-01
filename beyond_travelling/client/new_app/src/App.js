@@ -3,6 +3,7 @@ import './App.css';
 import AccessibleHotels from './components/wheelchair/AccessibleHotels'
 import BSL from './components/bsl/BSL';
 import Home from './containers/Home';
+import Header from './components/Header'
 // import MainPage from './containers/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
@@ -30,6 +31,7 @@ function App () {
 
     return (
         <>
+        <Header />
         {/* <Button variant="light" onClick = { setWheelchair(false) }>Wheelchair to go to hotels</Button>  */}
         <AccessibleHotels />
         <Button variant="light" onClick = { () => {setWheelchair(false)} }>GO BACK</Button>

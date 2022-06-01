@@ -7,22 +7,16 @@ import HotelDetail from './HotelDetail';
 
 
 const AccessibleHotels = () => {
-    const [region, setRegions] = useState([]);
-    const [selectedRegion, setSelectedRegion] = useState(null);
+    const [regions, setRegions] = useState([]);
 
     useEffect(() => {
         getRegions();
     }, [])
 
     const getRegions = function(){
-        console.log('fetch');
         fetch('http://localhost:8080/countries')
         .then(res => res.json())
         .then(regions => setRegions(regions))
-    }
-
-    const onRegionClick = function(region){
-        setSelectedRegion(region);
     }
 
     // const onHotelSelected = function(hotel){
@@ -31,8 +25,8 @@ const AccessibleHotels = () => {
 
     return (
         <div className="main-container">
-            <HotelList regions={region} onRegionClick={onRegionClick} />
-            {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
+            <HotelList regions={regions}/>
+            {/* {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null} */}
             
         </div>
     )
