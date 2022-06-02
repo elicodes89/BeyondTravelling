@@ -37,18 +37,19 @@ public class DataLoader implements ApplicationRunner {
         countryRepository.save(country3);
         Country country4 = new Country("Ireland"); //done
         countryRepository.save(country4);
-        Country country5 = new Country("Sky"); //done
-        countryRepository.save(country5);
 
         //This is the cities in Scotland
-        City city1 = new City("Edinburgh",country1); //done
+        City city1 = new City("Edinburgh",country1,"https://cdn.pixabay.com/photo/2019/12/10/10/42/edinburgh-4685583_1280.jpg"); //done
         cityRepository.save(city1);
-        City city2 = new City("St Andrews",country1); //done
+        City city2 = new City("St Andrews",country1,"https://cdn.pixabay.com/photo/2017/09/13/07/02/scotland-2744581_1280.jpg"); //done
         cityRepository.save(city2);
-        City city3 = new City("Inverness",country1); //done
+        City city3 = new City("Inverness",country1,"https://cdn.pixabay.com/photo/2016/08/20/15/49/bridge-1607823_1280.jpg"); //done
         cityRepository.save(city3);
-        City city4 = new City("Dundee",country1); //done
+        City city4 = new City("Dundee",country1, "https://cdn.pixabay.com/photo/2017/06/07/14/20/boat-2380490_1280.jpg"); //done
         cityRepository.save(city4);
+        City city19 = new City("Skye",country1, "https://drive.google.com/file/d/1CLiPNhWS2xdWeAQwiDn1bc_cDNptBWjs/view?usp=sharing"); //done
+        cityRepository.save(city19);
+
 
         //This is the hotels in Edinburgh
         Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1);
@@ -70,14 +71,18 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel11 = new Hotel("Staybridge Suites","020 3966 8654","https://www.guestreservations.com","-2.9624006001947434","56.465844944513066","Lower Dens Mill, Dundee, DD4 6AD, United Kingdom",city3);
         hotelRepository.save(hotel11);
 
+        //This is the hotel in Skye
+        Hotel hotel9 = new Hotel("Isle of Raasay Distillery","01478 470178","https://raasaydistillery.com/","-6.07391043731","57.3518275583","Borodale House Isle of Raasay, Kyle IV40 8PB",city19);
+        hotelRepository.save(hotel9);
+
         //This is the cities in England
-        City city10 = new City("London",country2); //done
+        City city10 = new City("London",country2,"img"); //done
         cityRepository.save(city10);
-        City city11 = new City("Manchester",country2); //done
+        City city11 = new City("Manchester",country2, "img"); //done
         cityRepository.save(city11);
-        City city12 = new City("Birmingham",country2);//done
+        City city12 = new City("Birmingham",country2,"img");//done
         cityRepository.save(city12);
-        City city13 = new City("Liverpool",country2);//done
+        City city13 = new City("Liverpool",country2,"img");//done
         cityRepository.save(city13);
 
         //These are the hotels in London
@@ -105,11 +110,11 @@ public class DataLoader implements ApplicationRunner {
 //        hotelRepository.save(hotel19);
 
         //This is the cities in Wales
-        City city14 = new City("Cardiff",country3);
+        City city14 = new City("Cardiff",country3,"img");
         cityRepository.save(city14);
-        City city15 = new City("Swansea",country3);
+        City city15 = new City("Swansea",country3, "");
         cityRepository.save(city15);
-        City city16 = new City("Newport",country3);
+        City city16 = new City("Newport",country3,"");
         cityRepository.save(city16);
 
         //These are the hotels in Cardiff
@@ -131,13 +136,13 @@ public class DataLoader implements ApplicationRunner {
 //        hotelRepository.save(hotel25);
 
         //This is the cities in Ireland
-        City city5 = new City("Dublin",country4);//done
+        City city5 = new City("Dublin",country4,"");//done
         cityRepository.save(city5);
-        City city6 = new City("Belfast",country4);//done
+        City city6 = new City("Belfast",country4,"");//done
         cityRepository.save(city6);
-        City city7 = new City("Galway",country4);//done
+        City city7 = new City("Galway",country4,"");//done
         cityRepository.save(city7);
-        City city8 = new City("Donegal",country4);//done
+        City city8 = new City("Donegal",country4,"");//done
         cityRepository.save(city8);
 
         //This is the hotels in Ireland
@@ -150,13 +155,6 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel4 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8);
         hotelRepository.save(hotel4);
 
-        //This is the city for Sky
-        City city9 = new City("Kyle",country5);
-        cityRepository.save(city9);
-
-        //This is the hotel in Sky
-        Hotel hotel9 = new Hotel("Isle of Raasay Distillery","01478 470178","https://raasaydistillery.com/","-6.07391043731","57.3518275583","Borodale House Isle of Raasay, Kyle IV40 8PB",city9);
-        hotelRepository.save(hotel9);
     }
 
 

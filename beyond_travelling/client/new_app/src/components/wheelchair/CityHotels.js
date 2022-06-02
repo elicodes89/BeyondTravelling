@@ -24,14 +24,15 @@ const cityHotels = selectedCity.hotels;
     )  
 } else if(selectedCityHotel != null){
   return (
-    <>
-    <h1>Selected Hotel</h1>
+  <div>
+<h1>Selected Hotel</h1>
     <li>{selectedCityHotel.id}</li>
     <li>{selectedCityHotel.hotel_name}</li>
     <li>{selectedCityHotel.contact_number}</li>
     <li>{selectedCityHotel.website}</li>
     <li>{selectedCityHotel.address}</li>
-    </>
+  </div>
+  
   )  
 }
 else {
