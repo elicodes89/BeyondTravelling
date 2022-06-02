@@ -18,10 +18,10 @@ const cityHotels = selectedCity.hotels;
   if (selectedCity != undefined && selectedCityHotel === null) {
     return (
       <>
-
       <li>{cityHotelsList}</li>
       </>
     )  
+
 } else if(selectedCityHotel != null){
   return (
     <>
@@ -31,6 +31,8 @@ const cityHotels = selectedCity.hotels;
     <li>{selectedCityHotel.contact_number}</li>
     <li>{selectedCityHotel.website}</li>
     <li>{selectedCityHotel.address}</li>
+    {/* <li>{selectedCityHotel.image}</li>
+    <li>{selectedCityHotel.video}</li> */}
     </>
   )  
 }
