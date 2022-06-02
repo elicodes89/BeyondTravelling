@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 
 
+
 function Home () {
 
 return (
@@ -12,11 +13,15 @@ return (
     </div>
     
     <div className='flex-container'>
-    <img className="bsl_sign" src={require("../access_icons/signing1.jpeg")} alt='Signing'/>
-    <img className="wheelchair" src={require("../access_icons/wheelchair.jpeg")} alt='Wheelchair'/>
+
+{/* have clickable images as hyperlink */}
+    <a href='src/components/bsl/BSL.js'><img className="bsl_sign" src={require("../access_icons/signing1.jpeg")} alt='Signing'/></a>
+    <a href='src/components/wheelchair/AccessibleHotels.js'><img className="wheelchair" src={require("../access_icons/wheelchair.jpeg")} alt='Wheelchair'/></a>
     </div>
-    </>
-    
+
+      
+    <footer>2022 - Created by Annika, Eli and Mate - </footer>
+  </>
   );
-}
-  export default Home;
+};
+export default Home;

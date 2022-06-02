@@ -1,12 +1,14 @@
 import React , { useState } from 'react';
 import './App.css';
-import AccessibleHotels from './components/wheelchair/AccessibleHotels'
-import BSL from './components/bsl/BSL';
-import Home from './containers/Home';
+import AccessibleHotels from './components/wheelchair/AccessibleHotels';
 import Header from './components/Header'
 // import MainPage from './containers/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './containers/Home';
+import BSL from './components/bsl/BSL';
+// import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
+
 
 function App () {
 
@@ -50,7 +52,5 @@ function App () {
   }
   
 };
-
-
 
 export default App;

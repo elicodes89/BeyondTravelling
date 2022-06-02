@@ -5,7 +5,6 @@ import HotelList from './HotelList';
 import HotelDetail from './HotelDetail';
 // import './MainPage.css';
 
-
 const AccessibleHotels = () => {
     const [regions, setRegions] = useState([]);
 
@@ -27,7 +26,6 @@ const AccessibleHotels = () => {
         <div className="main-container">
             <HotelList regions={regions}/>
             {/* {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null} */}
-            
         </div>
     )
 }
