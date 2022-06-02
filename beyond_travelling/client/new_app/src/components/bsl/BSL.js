@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+<<<<<<< HEAD
 // import HotelList from '../components/bsl/HotelList';
 // import HotelDetail from '../components/bsl/HotelDetail';
 // import HotelDetail from '../components/wheelchair/HotelDetail';
@@ -6,12 +7,17 @@ import React, { useState, useEffect } from 'react';
 // import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
 import video from '/Users/annikaneumann/codeclan_work/BeyondTravelling/beyond_travelling/client/new_app/src/caption_videos/HomepageIntroCC.mp4'
 import video1 from '/Users/annikaneumann/codeclan_work/BeyondTravelling/beyond_travelling/client/new_app/src/caption_videos/HotelNearHospitalCC.mp4'
+=======
+import HotelList from './HotelList';
+import HotelDetail from './HotelDetail';
+>>>>>>> 9389ff6f9fc6e01b49f08f93ba872f63d8cc6b0d
 
 
 const BSL = () => {
-    const [region, setRegions] = useState([]);
-    const [selectedRegion, setSelectedRegion] = useState(null);
+    // const [region, setRegions] = useState([]);
+    // const [selectedRegion, setSelectedRegion] = useState(null);
 
+<<<<<<< HEAD
 
     useEffect(() => {
         getRegions();
@@ -23,10 +29,21 @@ const BSL = () => {
         .then(res => res.json())
         .then(regions => setRegions(regions))
     }
+=======
+    // useEffect(() => {
+    //     getRegions();
+    // }, [])
 
-    const onRegionClick = function(region){
-        setSelectedRegion(region);
-    }
+    // const getRegions = function(){
+    //     fetch('http://localhost:8080/countries')
+    //     .then(res => res.json())
+    //     .then(regions => setRegions(regions))
+    // }
+>>>>>>> 9389ff6f9fc6e01b49f08f93ba872f63d8cc6b0d
+
+    // const onRegionClick = function(region){
+    //     setSelectedRegion(region);
+    // }
 
     // const onHotelSelected = function(hotel){
     //     setSelectedHotel(hotel);
@@ -36,6 +53,7 @@ const BSL = () => {
     return (
         // <div>
         <div className="main-container">
+<<<<<<< HEAD
             {/* <HotelList regions={region} onRegionClick={onRegionClick} />
             {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null}
             <AccessibleHotels /> */}
@@ -52,6 +70,13 @@ const BSL = () => {
 
             </div>
         
+=======
+            <h1>BSL Hotels here</h1>
+            {/* <HotelList regions={region} onRegionClick={onRegionClick} /> */}
+            {/* {selectedRegion ? <HotelDetail selectedRegion={selectedRegion} /> : null} */}
+            
+        </div>
+>>>>>>> 9389ff6f9fc6e01b49f08f93ba872f63d8cc6b0d
     )
 };
 

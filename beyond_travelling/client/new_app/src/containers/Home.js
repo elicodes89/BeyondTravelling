@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Header from '../components/Header';
+
 
 
 function Home () {
 
 return (
    <>
+   <Header />
     <div className='title'>
-    <h1>Welcome to Beyond Travelling</h1>
     <h2>Your travel app for accessible holidays</h2>
     </div>
     
@@ -19,7 +21,7 @@ return (
 
       
     <footer>2022 - Created by Annika, Eli and Mate - </footer>
-    </>
+  </>
   );
-}
-  export default Home;
+};
+export default Home;
