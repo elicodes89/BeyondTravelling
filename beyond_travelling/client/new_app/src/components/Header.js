@@ -11,12 +11,12 @@ return (
     <Container>
       <Navbar.Brand href="#home">
         <img
-          alt=""
           src="./Travel_Agent_Logo.jpeg"
+          alt=""
           width="30"
           height="30"
           // className="d-inline-block align-top"
-        />{' '}
+        />
       Welcome to Beyond Travelling     
        </Navbar.Brand>
     </Container>
