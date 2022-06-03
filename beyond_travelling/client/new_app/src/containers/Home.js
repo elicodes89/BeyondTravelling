@@ -9,7 +9,7 @@ return (
    <>
    <Header />
     <div className='title'>
-    <h2>Your travel app for accessible holidays</h2>
+    <h2 className>Your travel app for accessible holidays</h2>
     </div>
     
     <div className='flex-container'>
