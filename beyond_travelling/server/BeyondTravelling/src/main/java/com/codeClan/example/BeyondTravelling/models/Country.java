@@ -19,13 +19,17 @@ public class Country {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "img")
+    private String img;
+
     @JsonIgnoreProperties({"country"})
     @OneToMany(mappedBy = "country", fetch = FetchType.LAZY)
     private List<City> cities;
 
-    public Country(String name) {
+    public Country(String name, String img) {
         this.name = name;
         this.cities  = new ArrayList<>();
+        this.img = img;
 
     }
 
@@ -54,5 +58,13 @@ public class Country {
 
     public void setCities(List<City> cities) {
         this.cities = cities;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

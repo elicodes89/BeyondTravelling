@@ -18,6 +18,9 @@ public class City {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "img")
+    private String img;
+
     @JsonIgnoreProperties({"cities"})
     @ManyToOne
     @JoinColumn(name = "country_id", nullable = false)
@@ -27,10 +30,11 @@ public class City {
     @OneToMany(mappedBy = "city", fetch = FetchType.LAZY)
     private List<Hotel> hotels;
 
-    public City(String name, Country country) {
+    public City(String name, Country country, String img) {
         this.name = name;
         this.hotels = new ArrayList<>();
         this.country = country;
+        this.img = img;
     }
 
     public City() {
@@ -66,5 +70,13 @@ public class City {
 
     public void setHotels(List<Hotel> hotels) {
         this.hotels = hotels;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

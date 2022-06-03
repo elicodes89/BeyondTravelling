@@ -3,6 +3,8 @@ package com.codeClan.example.BeyondTravelling.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "hotels")
@@ -30,12 +32,23 @@ public class Hotel {
     @Column(name = "address")
     private String address;
 
+    @Column(name = "img")
+    private String img;
+
+    @JsonIgnoreProperties({"hotel"})
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
+    private List<Video> videos;
+
+    @JsonIgnoreProperties({"hotel"})
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
+    private List<Comment> comments;
+
     @JsonIgnoreProperties({"hotels"})
     @ManyToOne
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city) {
+    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city, String img) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
         this.website = website;
@@ -43,6 +56,9 @@ public class Hotel {
         this.latitude = latitude;
         this.address = address;
         this.city = city;
+        this.img = img;
+        this.videos = new ArrayList<>();
+        this.comments = new ArrayList<>();
     }
 
     public Hotel() {
@@ -110,6 +126,30 @@ public class Hotel {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public List<Video> getVideos() {
+        return videos;
+    }
+
+    public void setVideos(List<Video> videos) {
+        this.videos = videos;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 }
 
