@@ -35,6 +35,8 @@ const HotelDetail = (props) => {
       <>
       {/* <a> {region.name} </a> */}
       <h1>no cities, so no click</h1>
+     
+
       </>
     )
   }
