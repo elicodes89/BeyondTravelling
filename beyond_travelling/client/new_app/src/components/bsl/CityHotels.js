@@ -25,7 +25,7 @@ const cityHotels = selectedCity.hotels;
 } else if(selectedCityHotel != null){
   return (
     <>
-    <h1>Selected Hotel</h1>
+    <h1>Selected BSL Hotel</h1>
     <li>{selectedCityHotel.hotel_name}</li>
     <li>{selectedCityHotel.contact_number}</li>
     <li>{selectedCityHotel.website}</li>
@@ -37,7 +37,7 @@ else {
   return (
     <>
 
-    <h1>hey from Wheelchair CityHotels</h1>
+    <h1>hey from BSL CityHotels</h1>
     </>
   )
 }
