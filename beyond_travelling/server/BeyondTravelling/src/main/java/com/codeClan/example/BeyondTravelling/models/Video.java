@@ -1,5 +1,7 @@
 package com.codeClan.example.BeyondTravelling.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,8 +15,14 @@ public class Video {
     @Column(name = "name")
     private String name;
 
-    public Video(String name) {
+    @JsonIgnoreProperties({"videos"})
+    @ManyToOne
+    @JoinColumn(name = "video_id", nullable = false)
+    private Hotel hotel;
+
+    public Video(String name, Hotel hotel) {
         this.name = name;
+        this.hotel = hotel;
     }
 
     public Video() {
@@ -34,5 +42,13 @@ public class Video {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
     }
 }

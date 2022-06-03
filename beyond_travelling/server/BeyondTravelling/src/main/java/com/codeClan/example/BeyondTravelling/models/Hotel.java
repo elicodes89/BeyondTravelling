@@ -32,22 +32,22 @@ public class Hotel {
     @Column(name = "address")
     private String address;
 
-//    @Column(name = "about")
-//    private String about;
-
     @Column(name = "img")
     private String img;
+
+    @JsonIgnoreProperties({"hotel"})
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
+    private List<Video> videos;
+
+    @JsonIgnoreProperties({"hotel"})
+    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
+    private List<Comment> comments;
 
     @JsonIgnoreProperties({"hotels"})
     @ManyToOne
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-//    @JsonIgnoreProperties({"hotel"})
-//    @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
-//    private List<Video> videos;
-
-//    private List<Comment> comments;
     public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city, String img) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
@@ -56,10 +56,9 @@ public class Hotel {
         this.latitude = latitude;
         this.address = address;
         this.city = city;
-//        this.about = about;
         this.img = img;
-//        this.videos = new ArrayList<>();
-//        this.comments = new ArrayList<>();
+        this.videos = new ArrayList<>();
+        this.comments = new ArrayList<>();
     }
 
     public Hotel() {
@@ -129,20 +128,28 @@ public class Hotel {
         this.address = address;
     }
 
-//    public String getAbout() {
-//        return about;
-//    }
-//
-//    public void setAbout(String about) {
-//        this.about = about;
-//    }
-
     public String getImg() {
         return img;
     }
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public List<Video> getVideos() {
+        return videos;
+    }
+
+    public void setVideos(List<Video> videos) {
+        this.videos = videos;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 }
 
