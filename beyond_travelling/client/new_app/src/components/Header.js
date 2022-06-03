@@ -1,25 +1,23 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import logo from '../app_logos/logo.png';
 // import './App.css';
 
 function Header () {
 
 return (
    <>
-   <Navbar bg="dark" variant="dark">
-    <Container>
-      <Navbar.Brand href="#home">
+   <Navbar  className="justify-content-center" bg="dark" variant="dark">
+      <Navbar.Brand href="#">
         <img
-          src="./Travel_Agent_Logo.jpeg"
-          alt=""
-          width="30"
-          height="30"
-          // className="d-inline-block align-top"
+          src={logo}
+          alt="logo"
+          width="110"
+          height="100"
+          className="d-inline-block align-center"
         />
-      Welcome to Beyond Travelling     
+        Beyond Travelling
        </Navbar.Brand>
-    </Container>
   </Navbar>
    
    </>
