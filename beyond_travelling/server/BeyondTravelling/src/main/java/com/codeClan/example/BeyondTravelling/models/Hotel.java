@@ -30,12 +30,18 @@ public class Hotel {
     @Column(name = "address")
     private String address;
 
+//    @Column(name = "about")
+//    private String about;
+
+    @Column(name = "img")
+    private String img;
+
     @JsonIgnoreProperties({"hotels"})
     @ManyToOne
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city) {
+    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city, String img) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
         this.website = website;
@@ -43,6 +49,8 @@ public class Hotel {
         this.latitude = latitude;
         this.address = address;
         this.city = city;
+//        this.about = about;
+        this.img = img;
     }
 
     public Hotel() {
@@ -110,6 +118,22 @@ public class Hotel {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+//    public String getAbout() {
+//        return about;
+//    }
+//
+//    public void setAbout(String about) {
+//        this.about = about;
+//    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }
 
