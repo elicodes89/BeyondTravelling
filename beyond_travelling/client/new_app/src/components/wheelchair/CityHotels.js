@@ -11,6 +11,8 @@ const cityHotels = selectedCity.hotels;
 
   })
 
+  console.log(cityHotels)
+
   const onCityClick = function(cityHotel){
     setSelectedCityHotel(cityHotel);
 }
