@@ -10,6 +10,7 @@ const HotelDetail = (props) => {
   const citiesList = cities.map((city, index) => {
     return <div><Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "" width = "200px" /></Button></div>
   })
+  // console.log(cities);
 
   const onCityClick = function(city){
     setSelectedCity(city);
@@ -21,6 +22,7 @@ const HotelDetail = (props) => {
       <>
       {/* <a> {region.name} </a> */}
       <p>{citiesList}</p>
+      <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" />
       </>
     )
   } else if(selectedCity){
