@@ -1,12 +1,14 @@
 import React , { useState } from 'react';
 import './App.css';
-import AccessibleHotels from './components/wheelchair/AccessibleHotels'
-import BSL from './components/bsl/BSL';
-import Home from './containers/Home';
+import AccessibleHotels from './components/wheelchair/AccessibleHotels';
 import Header from './components/Header'
 // import MainPage from './containers/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './containers/Home';
+import BSL from './components/bsl/BSL';
+// import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
+
 
 function App () {
 
@@ -18,10 +20,14 @@ function App () {
     return (
         <>
         <Home />
+        <br></br><br></br>
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
         <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button>
         <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>  
-
+        
+        <div className = "footer">
+          <p>© 2022 Created by: Annika, Elisol & Mate </p>
+        </div>
         </>
         );
     
@@ -43,13 +49,10 @@ function App () {
         <>
         <BSL />
         <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
-
         </>
       )
   }
   
 };
-
-
 
 export default App;
