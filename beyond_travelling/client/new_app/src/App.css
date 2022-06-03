@@ -22,7 +22,6 @@
 
   justify-items: center;
   display: inline-flex;
-  position: ;
   flex-direction: row;
   justify-content: space-evenly;
     /* flex-shrink: 1; */
@@ -30,6 +29,9 @@
 
 .footer {
   text-align:center;
+  position:sticky;
+  position:bottom;
+
 }
 
 
