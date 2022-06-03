@@ -1,11 +1,7 @@
 package com.codeClan.example.BeyondTravelling.components;
 
-import com.codeClan.example.BeyondTravelling.models.City;
-import com.codeClan.example.BeyondTravelling.models.Country;
-import com.codeClan.example.BeyondTravelling.models.Hotel;
-import com.codeClan.example.BeyondTravelling.repositories.CityRepository;
-import com.codeClan.example.BeyondTravelling.repositories.CountryRepository;
-import com.codeClan.example.BeyondTravelling.repositories.HotelRepository;
+import com.codeClan.example.BeyondTravelling.models.*;
+import com.codeClan.example.BeyondTravelling.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -22,6 +18,13 @@ public class DataLoader implements ApplicationRunner {
 
     @Autowired
     HotelRepository hotelRepository;
+
+    @Autowired
+    VideoRepository videoRepository;
+
+    @Autowired
+    CommentRepository commentRepository;
+
 
     public DataLoader() {
     }
@@ -52,7 +55,7 @@ public class DataLoader implements ApplicationRunner {
 
 
         //This is the hotels in Edinburgh
-        Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"");
+        Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"https://www.youtube.com/embed/s0NFHo2RyMg");
         hotelRepository.save(hotel5);
         Hotel hotel6 = new Hotel("The Bonham","0131 226 6050","https://thebonham.com/","-3.188267"," 55.953251","35 Drumsheugh Gardens, Edinburgh, EH3 7RN, United Kingdom",city1,"");
         hotelRepository.save(hotel6);
@@ -154,6 +157,19 @@ public class DataLoader implements ApplicationRunner {
         hotelRepository.save(hotel3);
         Hotel hotel4 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"");
         hotelRepository.save(hotel4);
+
+       //This is the comment for Edinburgh
+        Comment comment1 = new Comment("where is the bathroom",hotel5);
+        commentRepository.save(comment1);
+        Comment comment2 = new Comment("where is the toilet",hotel5);
+        commentRepository.save(comment2);
+        Comment comment3 = new Comment("where is the restaurant",hotel5);
+        commentRepository.save(comment3);
+
+        //This is the section for videos
+        Video vide1 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
+        videoRepository.save(vide1);
+
 
     }
 
