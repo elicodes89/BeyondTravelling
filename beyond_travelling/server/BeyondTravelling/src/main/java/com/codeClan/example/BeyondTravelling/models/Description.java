@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "comments")
-public class Comment {
+public class Description {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,12 +20,12 @@ public class Comment {
     @JoinColumn(name = "comment_id", nullable = false)
     private Hotel hotel;
 
-    public Comment(String name, Hotel hotel) {
+    public Description(String name, Hotel hotel) {
         this.name = name;
         this.hotel = hotel;
     }
 
-    public Comment() {
+    public Description() {
     }
 
     public Long getId() {

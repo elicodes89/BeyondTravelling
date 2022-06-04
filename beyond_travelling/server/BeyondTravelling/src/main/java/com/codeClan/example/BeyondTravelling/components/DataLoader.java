@@ -23,7 +23,7 @@ public class DataLoader implements ApplicationRunner {
     VideoRepository videoRepository;
 
     @Autowired
-    CommentRepository commentRepository;
+    DescriptionRepository descriptionRepository;
 
 
     public DataLoader() {
@@ -143,17 +143,118 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel4 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/WoodCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/woodhillhouse3.jpeg");
         hotelRepository.save(hotel4);
 
-       //This is the comment for Edinburgh
-        Comment comment1 = new Comment("where is the bathroom",hotel5);
-        commentRepository.save(comment1);
-        Comment comment2 = new Comment("where is the toilet",hotel5);
-        commentRepository.save(comment2);
-        Comment comment3 = new Comment("where is the restaurant",hotel5);
-        commentRepository.save(comment3);
+       //This is the comment for Inverness
+        Description description1 = new Description("Delicious meals from early breakfast till dinner",hotel10);
+        descriptionRepository.save(description1);
+        Description description2 = new Description("Our guest rooms have black-out curtains, great for good sleep.",hotel10);
+        descriptionRepository.save(description2);
+        Description description3 = new Description("Only 3 minute walk from Inverness Airport, easily accessible transport to Inverness city centre.",hotel10);
+        descriptionRepository.save(description3);
+        Description description4 = new Description("Business or leisure, your stay at hotel will be very comfortable",hotel10);
+        descriptionRepository.save(description4);
 
         //This is the section for videos
         Video vide1 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
         videoRepository.save(vide1);
+
+        //This is the comments for Dundee
+        Description description5 = new Description("Hotel with gym, shared lounge and 24-hour front desk.",hotel11);
+        descriptionRepository.save(description5);
+        Description description6 = new Description("Continental and buffet breakfast options are available each morning",hotel11);
+        descriptionRepository.save(description6);
+        Description description7 = new Description("Popular points of interest near hotel like Dundee Central Library and St Paul's Cathedral.",hotel11);
+        descriptionRepository.save(description7);
+        Description description8 = new Description("Visual aids: Tactile signs, Braille",hotel11);
+        descriptionRepository.save(description8);
+        Description description9 = new Description("Emergency cord in bathroom, lower bathroom sink, higher level toilet",hotel11);
+        descriptionRepository.save(description9);
+
+        //Edinburgh Eden Lock
+        Description description10 = new Description("Offers free WiFi and is in the heart of the city, 72 rooms.",hotel5);
+        descriptionRepository.save(description10);
+        Description description11 = new Description("Rooms have flat-screen TV. There is a seating and/or dining area in some areas.",hotel5);
+        descriptionRepository.save(description11);
+        Description description12 = new Description("Private bathroom and kitchen, free toiletries, fresh bed linen available.",hotel5);
+        descriptionRepository.save(description12);
+        Description description13 = new Description("Many cultural places to go out and enjoy are close by.",hotel5);
+        descriptionRepository.save(description13);
+        Description description14 = new Description("In-room massages, spa treatments available upon request, must be paid",hotel5);
+        descriptionRepository.save(description14);
+        Description description15 = new Description("Edinburgh Castle Tour in Bsl available",hotel5);
+        descriptionRepository.save(description15);
+
+
+        //Edinburgh The Bonham
+        Description description16 = new Description("49 individually designed bedrooms.",hotel6);
+        descriptionRepository.save(description16);
+        Description description17 = new Description("10 minute walk to Princes Street/Gardens, great views of Edinburgh Castle.",hotel6);
+        descriptionRepository.save(description17);
+        Description description18 = new Description("Hotel fully wheelchair accessible, bathroom with wet room.",hotel6);
+        descriptionRepository.save(description18);
+        Description description19 = new Description("Entry via ramp at rear of building",hotel6);
+        descriptionRepository.save(description19);
+        Description description20 = new Description("Lift access to every floor, guide dog friendly hotel.",hotel6);
+        descriptionRepository.save(description20);
+
+        //St Andrews LODGE 6 AT ELDERBURN LUXURY LODGES
+        Description description21 = new Description("5 self-catering lodges.",hotel7);
+        descriptionRepository.save(description21);
+        Description description22 = new Description("Designed and built to suit people who may have additional access requirements.",hotel7);
+        descriptionRepository.save(description22);
+        Description description23 = new Description("All lodges have standard wheelchair-width doors, concrete pads to park on at the front door, level access into each house, bedrooms, bathrooms.",hotel7);
+        descriptionRepository.save(description23);
+        Description description24 = new Description("Additional grab rails and wetroom with shower.",hotel7);
+        descriptionRepository.save(description24);
+
+        //St Andrews CULMORE BRIDGE COTTAGES
+        Description description25 = new Description("",hotel8);
+        descriptionRepository.save(description25);
+        Description description26 = new Description("",hotel8);
+        descriptionRepository.save(description26);
+        Description description27 = new Description("",hotel8);
+        descriptionRepository.save(description27);
+        Description description28 = new Description("",hotel8);
+        descriptionRepository.save(description28);
+        Description description29 = new Description("",hotel8);
+        descriptionRepository.save(description29);
+
+        //Ireland Dublin
+        Description description30 = new Description("",hotel1);
+        descriptionRepository.save(description30);
+        Description description31 = new Description("",hotel1);
+        descriptionRepository.save(description31);
+        Description description32 = new Description("",hotel1);
+        descriptionRepository.save(description32);
+        Description description33 = new Description("",hotel1);
+        descriptionRepository.save(description33);
+        Description description34 = new Description("",hotel1);
+        descriptionRepository.save(description34);
+        Description description35 = new Description("",hotel1);
+        descriptionRepository.save(description35);
+        Description description36 = new Description("",hotel1);
+        descriptionRepository.save(description36);
+        Description description37 = new Description("",hotel1);
+        descriptionRepository.save(description37);
+
+        //Maldron Belfast
+        Description description38 = new Description("",hotel2);
+        descriptionRepository.save(description38);
+        Description description39 = new Description("",hotel2);
+        descriptionRepository.save(description39);
+        Description description40 = new Description("",hotel2);
+        descriptionRepository.save(description40);
+        Description description41 = new Description("",hotel2);
+        descriptionRepository.save(description41);
+
+        //Galway Belfast
+        Description description42 = new Description("",hotel3);
+        descriptionRepository.save(description42);
+        Description description43 = new Description("",hotel3);
+        descriptionRepository.save(description43);
+        Description description44 = new Description("",hotel3);
+        descriptionRepository.save(description44);
+
+
 
 
     }
