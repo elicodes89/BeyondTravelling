@@ -28,12 +28,12 @@ const cityHotels = selectedCity.hotels;
   return (
   <div>
 <h1>Selected Hotel</h1>
-    <li>{selectedCityHotel.id}</li>
     <li>{selectedCityHotel.hotel_name}</li>
     <li>{selectedCityHotel.contact_number}</li>
     <a href= {selectedCityHotel.website}>Webpage</a>
     <li>{selectedCityHotel.address}</li>
     <li>{selectedCityHotel.img}</li>
+    {/* <li>{selectedCityHotel.comments}</li> */}
     {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
 
     <iframe width="560" height="315" src={selectedCityHotel.img} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

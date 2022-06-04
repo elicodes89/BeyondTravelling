@@ -2,12 +2,12 @@ import React , { useState } from 'react';
 import './App.css';
 import AccessibleHotels from './components/wheelchair/AccessibleHotels';
 import Header from './components/Header'
-// import MainPage from './containers/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './containers/Home';
 import BSL from './components/bsl/BSL';
-// import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
+import Wheelchair from '../src/access_icons/wheelchair.png';
+import Sign from '../src/access_icons/sign.png';
 
 
 function App () {
@@ -20,10 +20,15 @@ function App () {
     return (
         <>
         <Home />
-        <br></br><br></br>
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
-        <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button>
-        <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>  
+        <div className = "homeButtons">
+        <div className='flex-container'>
+          <img onClick = { () => {setWheelchair(true)} } className="images" src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
+          {/* <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button> */}
+          <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
+          {/* <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>   */}
+          </div>
+        </div>
         
         <div className = "footer">
           <p>© 2022 Created by: Annika, Elisol & Mate </p>
