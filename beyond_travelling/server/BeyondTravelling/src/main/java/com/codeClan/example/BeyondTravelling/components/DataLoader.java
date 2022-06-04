@@ -23,7 +23,7 @@ public class DataLoader implements ApplicationRunner {
     VideoRepository videoRepository;
 
     @Autowired
-    DescriptionRepository descriptionRepository;
+    CommentRepository commentRepository;
 
 
     public DataLoader() {
@@ -143,134 +143,136 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel4 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/WoodCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/woodhillhouse3.jpeg");
         hotelRepository.save(hotel4);
 
-       //This is the comment for Inverness
-        Description description1 = new Description("Delicious meals from early breakfast till dinner",hotel10);
-        descriptionRepository.save(description1);
-        Description description2 = new Description("Our guest rooms have black-out curtains, great for good sleep.",hotel10);
-        descriptionRepository.save(description2);
-        Description description3 = new Description("Only 3 minute walk from Inverness Airport, easily accessible transport to Inverness city centre.",hotel10);
-        descriptionRepository.save(description3);
-        Description description4 = new Description("Business or leisure, your stay at hotel will be very comfortable",hotel10);
-        descriptionRepository.save(description4);
+//       //This is the comment for Inverness
+//        Description description1 = new Description("Delicious meals from early breakfast till dinner",hotel10);
+//        descriptionRepository.save(description1);
+//        Description description2 = new Description("Our guest rooms have black-out curtains, great for good sleep.",hotel10);
+//        descriptionRepository.save(description2);
+//        Description description3 = new Description("Only 3 minute walk from Inverness Airport, easily accessible transport to Inverness city centre.",hotel10);
+//        descriptionRepository.save(description3);
+//        Description description4 = new Description("Business or leisure, your stay at hotel will be very comfortable",hotel10);
+//        descriptionRepository.save(description4);
 
         //This is the section for videos
         Video vide1 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
         videoRepository.save(vide1);
-
-        //This is the comments for Dundee
-        Description description5 = new Description("Hotel with gym, shared lounge and 24-hour front desk.",hotel11);
-        descriptionRepository.save(description5);
-        Description description6 = new Description("Continental and buffet breakfast options are available each morning",hotel11);
-        descriptionRepository.save(description6);
-        Description description7 = new Description("Popular points of interest near hotel like Dundee Central Library and St Paul's Cathedral.",hotel11);
-        descriptionRepository.save(description7);
-        Description description8 = new Description("Visual aids: Tactile signs, Braille",hotel11);
-        descriptionRepository.save(description8);
-        Description description9 = new Description("Emergency cord in bathroom, lower bathroom sink, higher level toilet",hotel11);
-        descriptionRepository.save(description9);
+//        Video vide2 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
+//        videoRepository.save(vide2);
+//        Video vide3 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
+//        videoRepository.save(vide3);
+//        Video vide4 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
+//        videoRepository.save(vide4);
+//
+//        //This is the comments for Dundee
+        Comment description5 = new Comment("Hotel with gym, shared lounge and 24-hour front desk.",hotel11);
+        commentRepository.save(description5);
+        Comment description6 = new Comment("Continental and buffet breakfast options are available each morning",hotel11);
+        commentRepository.save(description6);
+        Comment description7 = new Comment("Popular points of interest near hotel like Dundee Central Library and St Paul's Cathedral.",hotel11);
+        commentRepository.save(description7);
+        Comment description8 = new Comment("Visual aids: Tactile signs, Braille",hotel11);
+        commentRepository.save(description8);
+        Comment description9 = new Comment("Emergency cord in bathroom, lower bathroom sink, higher level toilet",hotel11);
+        commentRepository.save(description9);
 
         //Edinburgh Eden Lock
-        Description description10 = new Description("Offers free WiFi and is in the heart of the city, 72 rooms.",hotel5);
-        descriptionRepository.save(description10);
-        Description description11 = new Description("Rooms have flat-screen TV. There is a seating and/or dining area in some areas.",hotel5);
-        descriptionRepository.save(description11);
-        Description description12 = new Description("Private bathroom and kitchen, free toiletries, fresh bed linen available.",hotel5);
-        descriptionRepository.save(description12);
-        Description description13 = new Description("Many cultural places to go out and enjoy are close by.",hotel5);
-        descriptionRepository.save(description13);
-        Description description14 = new Description("In-room massages, spa treatments available upon request, must be paid",hotel5);
-        descriptionRepository.save(description14);
-        Description description15 = new Description("Edinburgh Castle Tour in Bsl available",hotel5);
-        descriptionRepository.save(description15);
+        Comment comment10 = new Comment("Offers free WiFi and is in the heart of the city, 72 rooms.",hotel5);
+        commentRepository.save(comment10);
+        Comment comment11 = new Comment("Rooms have flat-screen TV. There is a seating and/or dining area in some areas.",hotel5);
+        commentRepository.save(comment11);
+        Comment description12 = new Comment("Private bathroom and kitchen, free toiletries, fresh bed linen available.",hotel5);
+        commentRepository.save(description12);
+        Comment description13 = new Comment("Many cultural places to go out and enjoy are close by.",hotel5);
+        commentRepository.save(description13);
+        Comment description14 = new Comment("In-room massages, spa treatments available upon request, must be paid",hotel5);
+        commentRepository.save(description14);
+        Comment description15 = new Comment("Edinburgh Castle Tour in Bsl available",hotel5);
+        commentRepository.save(description15);
+//
+//
+//        //Edinburgh The Bonham
+        Comment description16 = new Comment("49 individually designed bedrooms.",hotel6);
+        commentRepository.save(description16);
+        Comment description17 = new Comment("10 minute walk to Princes Street/Gardens, great views of Edinburgh Castle.",hotel6);
+        commentRepository.save(description17);
+        Comment description18 = new Comment("Hotel fully wheelchair accessible, bathroom with wet room.",hotel6);
+        commentRepository.save(description18);
+        Comment description19 = new Comment("Entry via ramp at rear of building",hotel6);
+        commentRepository.save(description19);
+        Comment description20 = new Comment("Lift access to every floor, guide dog friendly hotel.",hotel6);
+        commentRepository.save(description20);
+//
+//        //St Andrews LODGE 6 AT ELDERBURN LUXURY LODGES
+        Comment description21 = new Comment("5 self-catering lodges.",hotel7);
+        commentRepository.save(description21);
+        Comment description22 = new Comment("Designed and built to suit people who may have additional access requirements.",hotel7);
+        commentRepository.save(description22);
+        Comment description23 = new Comment("All lodges have standard wheelchair-width doors, concrete pads to park on at the front door, level access into each house, bedrooms, bathrooms.",hotel7);
+        commentRepository.save(description23);
+        Comment description24 = new Comment("Additional grab rails and wetroom with shower.",hotel7);
+        commentRepository.save(description24);
 
+//        //St Andrews CULMORE BRIDGE COTTAGES
+        Comment description25 = new Comment("John and Jacqui welcome all guests at Culmore Bridge Cottages.",hotel8);
+        commentRepository.save(description25);
+        Comment description26 = new Comment("3 spacious, comfortable bungalows set in peaceful woodland area.",hotel8);
+        commentRepository.save(description26);
+        Comment description27 = new Comment("Cottages furnished to very high standard, all fully wheelchair-friendly",hotel8);
+        commentRepository.save(description27);
+        Comment description28 = new Comment("Large wet room with wheel-in shower, shower chair with arms, grab rails, high level toilet.",hotel8);
+        commentRepository.save(description28);
+        Comment description29 = new Comment("Wheelchair friendly furniture and carpets. Kitchens have some low-level worktops, access under hob and sink.",hotel8);
+        commentRepository.save(description29);
+//
+//        //Ireland Dublin
+        Comment description30 = new Comment("Overlooking a leafy park, Hotel only 5 minutes by shuttle bus from Dublin Airport.",hotel1);
+        commentRepository.save(description30);
+        Comment description31 = new Comment("15 minutes by car from Dublin City Centre.",hotel1);
+        commentRepository.save(description31);
+        Comment description32 = new Comment("Enjoy Guinness Brewery, Jameson Whiskey Distillery, Trinity College and Book of Kells, rare book.\n",hotel1);
+        commentRepository.save(description32);
+        Comment description33 = new Comment("Induction Loop System at reception, Braille elevator available if visually impaired.",hotel1);
+        commentRepository.save(description33);
+        Comment description34 = new Comment("Vibrating fire alarm, visual alarm in hallways and public areas.",hotel1);
+        commentRepository.save(description34);
+        Comment description35 = new Comment("Hotel very wheelchair accessible as well.",hotel1);
+        commentRepository.save(description35);
+        Comment description36 = new Comment("Click on hotel link for more information and to book.",hotel1);
+        commentRepository.save(description36);
+        Comment description37 = new Comment("Exciting events in Dublin available : for example at the Little Museum, an Irish Sign Language Tour – click here https://www.littlemuseum.ie/irish-sign-language-tour\n",hotel1);
+        commentRepository.save(description37);
+//
+//        //Maldron Belfast
+        Comment description38 = new Comment("Maldron Hotel is located right in the heart of Belfast city.",hotel2);
+        commentRepository.save(description38);
+        Comment description39 = new Comment("Walking distance to restaurants and historic landmarks.",hotel2);
+        commentRepository.save(description39);
+        Comment description40 = new Comment("Brilliant Customer Service, everything you need for great holidays.",hotel2);
+        commentRepository.save(description40);
+        Comment description41 = new Comment("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel2);
+        commentRepository.save(description41);
 
-        //Edinburgh The Bonham
-        Description description16 = new Description("49 individually designed bedrooms.",hotel6);
-        descriptionRepository.save(description16);
-        Description description17 = new Description("10 minute walk to Princes Street/Gardens, great views of Edinburgh Castle.",hotel6);
-        descriptionRepository.save(description17);
-        Description description18 = new Description("Hotel fully wheelchair accessible, bathroom with wet room.",hotel6);
-        descriptionRepository.save(description18);
-        Description description19 = new Description("Entry via ramp at rear of building",hotel6);
-        descriptionRepository.save(description19);
-        Description description20 = new Description("Lift access to every floor, guide dog friendly hotel.",hotel6);
-        descriptionRepository.save(description20);
+//        //Galway Belfast
+        Comment description42 = new Comment("The Dean Galway is your home, right on doorstep of Wild Atlantic Way!",hotel3);
+        commentRepository.save(description42);
+        Comment description43 = new Comment("Hotel offers 100 super comfortable rooms.",hotel3);
+        commentRepository.save(description43);
+        Comment description44 = new Comment("Building has unique historic features, including part of Galway to Clifden railway tunnel.",hotel3);
+        commentRepository.save(description44);
+        Comment description45 = new Comment("Hotel has 4 ground floor rooms, one with full wheelchair access & a wet room",hotel3);
+        commentRepository.save(description45);
 
-        //St Andrews LODGE 6 AT ELDERBURN LUXURY LODGES
-        Description description21 = new Description("5 self-catering lodges.",hotel7);
-        descriptionRepository.save(description21);
-        Description description22 = new Description("Designed and built to suit people who may have additional access requirements.",hotel7);
-        descriptionRepository.save(description22);
-        Description description23 = new Description("All lodges have standard wheelchair-width doors, concrete pads to park on at the front door, level access into each house, bedrooms, bathrooms.",hotel7);
-        descriptionRepository.save(description23);
-        Description description24 = new Description("Additional grab rails and wetroom with shower.",hotel7);
-        descriptionRepository.save(description24);
-
-        //St Andrews CULMORE BRIDGE COTTAGES
-        Description description25 = new Description("John and Jacqui welcome all guests at Culmore Bridge Cottages.",hotel8);
-        descriptionRepository.save(description25);
-        Description description26 = new Description("3 spacious, comfortable bungalows set in peaceful woodland area.",hotel8);
-        descriptionRepository.save(description26);
-        Description description27 = new Description("Cottages furnished to very high standard, all fully wheelchair-friendly",hotel8);
-        descriptionRepository.save(description27);
-        Description description28 = new Description("Large wet room with wheel-in shower, shower chair with arms, grab rails, high level toilet.\u200D",hotel8);
-        descriptionRepository.save(description28);
-        Description description29 = new Description("Wheelchair friendly furniture and carpets. Kitchens have some low-level worktops, access under hob and sink.",hotel8);
-        descriptionRepository.save(description29);
-
-        //Ireland Dublin
-        Description description30 = new Description("Overlooking a leafy park, Hotel only 5 minutes by shuttle bus from Dublin Airport.",hotel1);
-        descriptionRepository.save(description30);
-        Description description31 = new Description("15 minutes by car from Dublin City Centre.",hotel1);
-        descriptionRepository.save(description31);
-        Description description32 = new Description("Enjoy Guinness Brewery, Jameson Whiskey Distillery, Trinity College and Book of Kells, rare book.\n",hotel1);
-        descriptionRepository.save(description32);
-        Description description33 = new Description("Induction Loop System at reception, Braille elevator available if visually impaired.",hotel1);
-        descriptionRepository.save(description33);
-        Description description34 = new Description("Vibrating fire alarm, visual alarm in hallways and public areas.",hotel1);
-        descriptionRepository.save(description34);
-        Description description35 = new Description("Hotel very wheelchair accessible as well.",hotel1);
-        descriptionRepository.save(description35);
-        Description description36 = new Description("Click on hotel link for more information and to book.",hotel1);
-        descriptionRepository.save(description36);
-        Description description37 = new Description("Exciting events in Dublin available : for example at the Little Museum, an Irish Sign Language Tour – click here https://www.littlemuseum.ie/irish-sign-language-tour\n",hotel1);
-        descriptionRepository.save(description37);
-
-        //Maldron Belfast
-        Description description38 = new Description("Maldron Hotel is located right in the heart of Belfast city.",hotel2);
-        descriptionRepository.save(description38);
-        Description description39 = new Description("Walking distance to restaurants and historic landmarks.",hotel2);
-        descriptionRepository.save(description39);
-        Description description40 = new Description("Brilliant Customer Service, everything you need for great holidays.",hotel2);
-        descriptionRepository.save(description40);
-        Description description41 = new Description("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel2);
-        descriptionRepository.save(description41);
-
-        //Galway Belfast
-        Description description42 = new Description("The Dean Galway is your home, right on doorstep of Wild Atlantic Way!",hotel3);
-        descriptionRepository.save(description42);
-        Description description43 = new Description("Hotel offers 100 super comfortable rooms.",hotel3);
-        descriptionRepository.save(description43);
-        Description description44 = new Description("Building has unique historic features, including part of Galway to Clifden railway tunnel.",hotel3);
-        descriptionRepository.save(description44);
-        Description description45 = new Description("Hotel has 4 ground floor rooms, one with full wheelchair access & a wet room",hotel3);
-        descriptionRepository.save(description45);
-
-        //Donegal
-        Description description46 = new Description("Historic coastal house built 17th century. House overlooks beautiful Donegal Highlands.",hotel4);
-        descriptionRepository.save(description46);
-        Description description47 = new Description("Half mile from sea and one quarter from coastal town Ardara on the ‘Wild Atlantic Way’",hotel4);
-        descriptionRepository.save(description47);
-        Description description48 = new Description("Woodhill House well known for high quality and reasonable prices.",hotel4);
-        descriptionRepository.save(description48);
-        Description description49 = new Description("4 ground floor rooms with full wheelchair access & a wet room",hotel4);
-        descriptionRepository.save(description49);
-        Description description50 = new Description("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab rails",hotel4);
-        descriptionRepository.save(description50);
-
-
-
-
+//        //Donegal
+        Comment description46 = new Comment("Historic coastal house built 17th century. House overlooks beautiful Donegal Highlands.",hotel4);
+        commentRepository.save(description46);
+        Comment description47 = new Comment("Half mile from sea and one quarter from coastal town Ardara on the ‘Wild Atlantic Way’",hotel4);
+        commentRepository.save(description47);
+        Comment description48 = new Comment("Woodhill House well known for high quality and reasonable prices.",hotel4);
+        commentRepository.save(description48);
+        Comment description49 = new Comment("4 ground floor rooms with full wheelchair access & a wet room",hotel4);
+        commentRepository.save(description49);
+        Comment description50 = new Comment("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab railsr",hotel4);
+        commentRepository.save(description50);
 
 
     }

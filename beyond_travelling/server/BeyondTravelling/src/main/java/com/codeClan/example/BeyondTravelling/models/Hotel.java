@@ -44,7 +44,7 @@ public class Hotel {
 
     @JsonIgnoreProperties({"hotel"})
     @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
-    private List<Description> descriptions;
+    private List<Comment> comments;
 
     @JsonIgnoreProperties({"hotels"})
     @ManyToOne
@@ -60,9 +60,10 @@ public class Hotel {
         this.address = address;
         this.city = city;
         this.img = img;
-        this.videos = new ArrayList<>();
-        this.descriptions = new ArrayList<>();
         this.img2 = img2;
+        this.videos = new ArrayList<>();
+        this.comments = new ArrayList<>();
+
     }
 
     public Hotel() {
@@ -148,12 +149,12 @@ public class Hotel {
         this.videos = videos;
     }
 
-    public List<Description> getComments() {
-        return descriptions;
+    public List<Comment> getComments() {
+        return comments;
     }
 
-    public void setComments(List<Description> descriptions) {
-        this.descriptions = descriptions;
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 
     public String getImg2() {
