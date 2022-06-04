@@ -207,52 +207,68 @@ public class DataLoader implements ApplicationRunner {
         descriptionRepository.save(description24);
 
         //St Andrews CULMORE BRIDGE COTTAGES
-        Description description25 = new Description("",hotel8);
+        Description description25 = new Description("John and Jacqui welcome all guests at Culmore Bridge Cottages.",hotel8);
         descriptionRepository.save(description25);
-        Description description26 = new Description("",hotel8);
+        Description description26 = new Description("3 spacious, comfortable bungalows set in peaceful woodland area.",hotel8);
         descriptionRepository.save(description26);
-        Description description27 = new Description("",hotel8);
+        Description description27 = new Description("Cottages furnished to very high standard, all fully wheelchair-friendly",hotel8);
         descriptionRepository.save(description27);
-        Description description28 = new Description("",hotel8);
+        Description description28 = new Description("Large wet room with wheel-in shower, shower chair with arms, grab rails, high level toilet.\u200D",hotel8);
         descriptionRepository.save(description28);
-        Description description29 = new Description("",hotel8);
+        Description description29 = new Description("Wheelchair friendly furniture and carpets. Kitchens have some low-level worktops, access under hob and sink.",hotel8);
         descriptionRepository.save(description29);
 
         //Ireland Dublin
-        Description description30 = new Description("",hotel1);
+        Description description30 = new Description("Overlooking a leafy park, Hotel only 5 minutes by shuttle bus from Dublin Airport.",hotel1);
         descriptionRepository.save(description30);
-        Description description31 = new Description("",hotel1);
+        Description description31 = new Description("15 minutes by car from Dublin City Centre.",hotel1);
         descriptionRepository.save(description31);
-        Description description32 = new Description("",hotel1);
+        Description description32 = new Description("Enjoy Guinness Brewery, Jameson Whiskey Distillery, Trinity College and Book of Kells, rare book.\n",hotel1);
         descriptionRepository.save(description32);
-        Description description33 = new Description("",hotel1);
+        Description description33 = new Description("Induction Loop System at reception, Braille elevator available if visually impaired.",hotel1);
         descriptionRepository.save(description33);
-        Description description34 = new Description("",hotel1);
+        Description description34 = new Description("Vibrating fire alarm, visual alarm in hallways and public areas.",hotel1);
         descriptionRepository.save(description34);
-        Description description35 = new Description("",hotel1);
+        Description description35 = new Description("Hotel very wheelchair accessible as well.",hotel1);
         descriptionRepository.save(description35);
-        Description description36 = new Description("",hotel1);
+        Description description36 = new Description("Click on hotel link for more information and to book.",hotel1);
         descriptionRepository.save(description36);
-        Description description37 = new Description("",hotel1);
+        Description description37 = new Description("Exciting events in Dublin available : for example at the Little Museum, an Irish Sign Language Tour – click here https://www.littlemuseum.ie/irish-sign-language-tour\n",hotel1);
         descriptionRepository.save(description37);
 
         //Maldron Belfast
-        Description description38 = new Description("",hotel2);
+        Description description38 = new Description("Maldron Hotel is located right in the heart of Belfast city.",hotel2);
         descriptionRepository.save(description38);
-        Description description39 = new Description("",hotel2);
+        Description description39 = new Description("Walking distance to restaurants and historic landmarks.",hotel2);
         descriptionRepository.save(description39);
-        Description description40 = new Description("",hotel2);
+        Description description40 = new Description("Brilliant Customer Service, everything you need for great holidays.",hotel2);
         descriptionRepository.save(description40);
-        Description description41 = new Description("",hotel2);
+        Description description41 = new Description("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel2);
         descriptionRepository.save(description41);
 
         //Galway Belfast
-        Description description42 = new Description("",hotel3);
+        Description description42 = new Description("The Dean Galway is your home, right on doorstep of Wild Atlantic Way!",hotel3);
         descriptionRepository.save(description42);
-        Description description43 = new Description("",hotel3);
+        Description description43 = new Description("Hotel offers 100 super comfortable rooms.",hotel3);
         descriptionRepository.save(description43);
-        Description description44 = new Description("",hotel3);
+        Description description44 = new Description("Building has unique historic features, including part of Galway to Clifden railway tunnel.",hotel3);
         descriptionRepository.save(description44);
+        Description description45 = new Description("Hotel has 4 ground floor rooms, one with full wheelchair access & a wet room",hotel3);
+        descriptionRepository.save(description45);
+
+        //Donegal
+        Description description46 = new Description("Historic coastal house built 17th century. House overlooks beautiful Donegal Highlands.",hotel4);
+        descriptionRepository.save(description46);
+        Description description47 = new Description("Half mile from sea and one quarter from coastal town Ardara on the ‘Wild Atlantic Way’",hotel4);
+        descriptionRepository.save(description47);
+        Description description48 = new Description("Woodhill House well known for high quality and reasonable prices.",hotel4);
+        descriptionRepository.save(description48);
+        Description description49 = new Description("4 ground floor rooms with full wheelchair access & a wet room",hotel4);
+        descriptionRepository.save(description49);
+        Description description50 = new Description("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab rails",hotel4);
+        descriptionRepository.save(description50);
+
+
 
 
 
