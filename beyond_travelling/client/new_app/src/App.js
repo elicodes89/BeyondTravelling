@@ -26,12 +26,8 @@ function App () {
         <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button>
         <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>  
         <Footer />
-        
-        {/* <div className = "footer">
-          <p>© 2022 Created by: Annika, Elisol & Mate </p>
-        </div> */}
         </>
-        );
+      );
     
   } else if (wheelchair === true) {
 
