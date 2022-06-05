@@ -29,6 +29,7 @@ const HotelList = ({regions}) => {
     return (      
     <div>
     <ul>
+    <h2>Please choose region</h2>
       {/* <h1>Hello from BSL hotel list</h1> */}
       {regionsItems}
     </ul>

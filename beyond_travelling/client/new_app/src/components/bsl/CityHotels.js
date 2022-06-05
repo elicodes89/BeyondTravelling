@@ -10,6 +10,10 @@ const cityHotels = selectedCity.hotels;
     return <div><Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}</Button></div>
 
   })
+  function task(){
+    console.log(cityHotelsList)
+  }
+  setTimeout(task, 1000);
 
   const onCityClick = function(cityHotel){
     setSelectedCityHotel(cityHotel);
@@ -18,7 +22,6 @@ const cityHotels = selectedCity.hotels;
   if (selectedCity != undefined && selectedCityHotel === null) {
     return (
       <>
-
       <li>{cityHotelsList}</li>
       </>
     )  
@@ -36,8 +39,7 @@ const cityHotels = selectedCity.hotels;
 else {
   return (
     <>
-
-    <h1>hey from BSL CityHotels</h1>
+    <h1>No hotel available</h1>
     </>
   )
 }

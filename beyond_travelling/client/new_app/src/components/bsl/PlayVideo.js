@@ -1,7 +1,25 @@
-// import ReactPlayer from "react-player";
-// import React, {useState} from "react";
+import ReactPlayer from "react-player";
+import React, {useState} from "react";
+
+// function PlayVideo() {
+//     const [videoFilePath, setVideoFilePath] =useState(null);
+//     setVideoFilePath(URL.createObjectURL('videos/HomepageIntroCC.mp4'))
 
 
+// return (
+     
+//     <div className='homepageIntro'>
+//         <ReactPlayer 
+//         setVideoFilePath
+//         url='videos/HomepageIntroCC.mp4' 
+//         with='100%' height='100%' 
+//         controls={true} />
+//     </div>
+//     );
+
+// }
+
+// export default PlayVideo;
 // const PlayVideo = (
 //     handleVideoLoading,
 //     handleVideoPlaying
@@ -25,6 +43,7 @@
 // }
 
 // export default PlayVideo;
+
 
 
 

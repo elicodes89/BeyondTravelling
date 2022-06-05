@@ -21,6 +21,8 @@ const HotelList = ({regions}) => {
       
       <div>
       <ul>
+      <h3>Please choose a city</h3>
+
         <HotelDetail region={selectedRegion}/>
       </ul>
     </div>

@@ -13,6 +13,11 @@ const cityHotels = selectedCity.hotels;
 
   console.log(cityHotels)
 
+  function task(){
+    console.log(cityHotelsList)
+  }
+setTimeout(task, 1000);
+
   const onCityClick = function(cityHotel){
     setSelectedCityHotel(cityHotel);
 }
@@ -47,8 +52,7 @@ const cityHotels = selectedCity.hotels;
 else {
   return (
     <>
-
-    <h1>hey</h1>
+    <h1>Please choose a city</h1>
     </>
   )
 }

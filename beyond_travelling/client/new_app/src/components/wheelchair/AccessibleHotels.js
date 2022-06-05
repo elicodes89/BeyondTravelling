@@ -18,13 +18,17 @@ const AccessibleHotels = () => {
     function task(){
         console.log(getRegions)
     }
-    setTimeout(task, 3000);
+    setTimeout(task, 1000);
 
     return (
+        <>     
+        <h3>Please choose a region</h3>
+
         <div className="main-container">
-        <h2>Please choose region</h2>
             <HotelList regions={regions}/>
         </div>
+        </>
+
     );
 };
 
