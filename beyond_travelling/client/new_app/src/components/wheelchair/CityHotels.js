@@ -7,7 +7,7 @@ const selectedCity = props.selectedCity;
 const cityHotels = selectedCity.hotels;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <div><Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}</Button></div>
+    return <div><Button variant="light" onClick = {() => onCityClick(cityHotel) }><img src= {cityHotel.img2} alt= "" width = "200px" /></Button></div>
 
   })
 
@@ -21,7 +21,8 @@ const cityHotels = selectedCity.hotels;
     return (
       <>
 
-      <li>{cityHotelsList}</li>
+    <p>{cityHotelsList}</p>
+      {/* <img src= {cityHotelsList.img2} alt= "" width = "200px" /> */}
       </>
     )  
 } else if(selectedCityHotel != null){
@@ -33,11 +34,11 @@ const cityHotels = selectedCity.hotels;
     <li>{selectedCityHotel.contact_number}</li>
     <a href= {selectedCityHotel.website}>Webpage</a>
     <li>{selectedCityHotel.address}</li>
-    <li>{selectedCityHotel.img}</li>
-    {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
-
+    <br></br>
+    <img src= {selectedCityHotel.img} alt= "" width = "200px" />
+    <br></br>
     <iframe width="560" height="315" src={selectedCityHotel.img} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <br></br>
   </div>
   
   )  
