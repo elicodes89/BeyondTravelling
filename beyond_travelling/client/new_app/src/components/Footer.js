@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 {/* Column3 */}
                 <div className='col'>
-                    <h4><img src={signingicon} alt="signing icon" width="45px"/>BSL content</h4>
+                    <h4><img src={signingicon} alt="signing icon" width="35px"/>BSL content</h4>
                     <ul className='list-unstyled'>
                         <li><a href="https://www.nhm.ac.uk/events/deaf-led-bsl-behind-the-scenes-tour-spirit-collection.html?fbclid=IwAR2lZwPkv2kc6GhCjpx6j0b9co13-o1E0SwjHWBprNX-Yi2GFq1VtiY8gXs">Deaf led tour at the Natural History Museum London</a></li>
                         <li><a href="https://www.edinburghcastle.scot/see-and-do/tours-guides-and-itineraries/british-sign-language-tour">BSL Tours at Edinburgh Castle</a></li>

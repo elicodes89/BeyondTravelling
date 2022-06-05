@@ -16,7 +16,16 @@ const BSL = () => {
         fetch('http://localhost:8080/countries')
         .then(res => res.json())
         .then(regions => setRegions(regions))
+
     }
+
+    function task(){
+        console.log(getRegions)
+    }
+    setTimeout(task, 3000);
+    
+
+    
     return (
         <>
         <div className="main-container">

@@ -15,6 +15,11 @@ const AccessibleHotels = () => {
         .then(regions => setRegions(regions))
     }
 
+    function task(){
+        console.log(getRegions)
+    }
+    setTimeout(task, 3000);
+
     return (
         <div className="main-container">
         <h2>Please choose region</h2>
