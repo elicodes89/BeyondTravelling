@@ -27,12 +27,14 @@ const cityHotels = selectedCity.hotels;
 } else if(selectedCityHotel != null){
   return (
   <div>
-<h1>Selected Hotel</h1>
-    <li>{selectedCityHotel.id}</li>
-    <li>{selectedCityHotel.hotel_name}</li>
-    <li>{selectedCityHotel.contact_number}</li>
-    <a href= {selectedCityHotel.website}>Webpage</a>
-    <li>{selectedCityHotel.address}</li>
+    <br>
+    </br>
+    <h2>{selectedCityHotel.hotel_name}</h2>   
+    <br></br>
+    {/* <li>{selectedCityHotel.hotel_name}</li> */}
+    <li>Contact number: {selectedCityHotel.contact_number}</li>
+    <li><a href= {selectedCityHotel.website}>Hotel Website</a></li>
+    <li>Address: {selectedCityHotel.address}</li>
     <li>{selectedCityHotel.img}</li>
     {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
 

@@ -30,7 +30,7 @@ const HotelList = ({regions}) => {
     return (      
     <div>
     <ul>
-      <h1>Hello from BSL hotel list</h1>
+      {/* <h1>Hello from BSL hotel list</h1> */}
       {regionsItems}
     </ul>
   </div>

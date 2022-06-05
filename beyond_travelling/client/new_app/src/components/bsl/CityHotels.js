@@ -25,11 +25,11 @@ const cityHotels = selectedCity.hotels;
 } else if(selectedCityHotel != null){
   return (
     <>
-    <h1>Selected BSL Hotel</h1>
-    <li>{selectedCityHotel.hotel_name}</li>
-    <li>{selectedCityHotel.contact_number}</li>
-    <li>{selectedCityHotel.website}</li>
-    <li>{selectedCityHotel.address}</li>
+    <h2>{selectedCityHotel.hotel_name}</h2>
+    {/* <li>Hotel:{selectedCityHotel.hotel_name}</li> */}
+    <li>Contact number:{selectedCityHotel.contact_number}</li>
+    <li><a href= {selectedCityHotel.website}>Hotel Website</a></li>
+    <li>Address: {selectedCityHotel.address}</li>
     </>
   )  
 }

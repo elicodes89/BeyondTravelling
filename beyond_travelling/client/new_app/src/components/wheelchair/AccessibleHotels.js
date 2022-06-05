@@ -17,6 +17,7 @@ const AccessibleHotels = () => {
 
     return (
         <div className="main-container">
+        <h2>Please choose region</h2>
             <HotelList regions={regions}/>
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
+// import PlayVideo from './PlayVideo';
 
 
 const BSL = () => {
@@ -17,10 +18,14 @@ const BSL = () => {
         .then(regions => setRegions(regions))
     }
     return (
+        <>
         <div className="main-container">
+        <h2>Please choose region</h2>
             <HotelList regions = {regions}/>
-
-        </div>        
+        </div>  
+        {/* <PlayVideo /> */}
+        </>
+      
     );
 };
 

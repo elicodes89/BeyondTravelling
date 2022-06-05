@@ -33,7 +33,7 @@ const HotelDetail = (props) => {
     return (
       <>
       {/* <a> {region.name} </a> */}
-      <h1>no BSL cities, so no click</h1>
+      <h1>Not clicked on city</h1>
       </>
     );
   };
