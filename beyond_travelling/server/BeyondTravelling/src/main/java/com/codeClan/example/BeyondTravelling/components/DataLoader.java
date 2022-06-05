@@ -54,7 +54,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city19);
 
         //This is the hotels in Edinburgh
-        Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/EdenLockeCollage.jpg","");
+        Hotel hotel5 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/EdenLockeCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/Eden_Locke_EDI.jpeg");
         hotelRepository.save(hotel5);
         Hotel hotel6 = new Hotel("The Bonham","0131 226 6050","https://thebonham.com/","-3.188267"," 55.953251","35 Drumsheugh Gardens, Edinburgh, EH3 7RN, United Kingdom",city1,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/BonhamCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/Bonham4.jpeg");
         hotelRepository.save(hotel6);
@@ -88,19 +88,19 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city13);
 
         //These are the hotels in London
-        Hotel hotel12 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","");
+        Hotel hotel12 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/London/The_Guardsman_London.jpeg");
         hotelRepository.save(hotel12);
 
         //This is the hotel in Manchester
-        Hotel hotel14 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/ClaytonCollage.jpg","");
+        Hotel hotel14 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/ClaytonCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Manchester/Clayton_Hotel_Manchaster.jpeg");
         hotelRepository.save(hotel14);
 
         //These are the hotels in Birmingham
-        Hotel hotel16 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/HolidayCollage.jpg","");
+        Hotel hotel16 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/HolidayCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Birmingham/Aparthotel_Birmingham.jpeg");
         hotelRepository.save(hotel16);
 
         //These are the hotels in Liverpool
-        Hotel hotel18 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/InnsideCollage.jpg","");
+        Hotel hotel18 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/InnsideCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Liverpool/Innside_Liverpool.jpeg");
         hotelRepository.save(hotel18);
 
         //This is the cities in Wales
@@ -138,7 +138,7 @@ public class DataLoader implements ApplicationRunner {
         hotelRepository.save(hotel1);
         Hotel hotel2 = new Hotel("Meldron Belfast ","+35 02896001680","https://www.maldronhotelbelfastcity.com/room","-5.932631321052927","54.594818490728684","20 Brunswick Street Belfast",city6,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/MaldronCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/maldron1.jpeg");
         hotelRepository.save(hotel2);
-        Hotel hotel3 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","");
+        Hotel hotel3 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
         hotelRepository.save(hotel3);
         Hotel hotel4 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/WoodCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/woodhillhouse3.jpeg");
         hotelRepository.save(hotel4);
@@ -274,95 +274,92 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description50);
 
         //Skye
-        Comment description51 = new Comment("",hotel9);
+        Comment description51 = new Comment("Only Scottish distillery where you can stay overnight in the same building",hotel9);
         commentRepository.save(description51);
-        Comment description52 = new Comment("",hotel9);
+        Comment description52 = new Comment("Unforgettable experience, where whisky and hospitality go hand in hand.",hotel9);
         commentRepository.save(description52);
-        Comment description53 = new Comment("",hotel9);
+        Comment description53 = new Comment("Borodale House, Victorian villa transformed into distillery.",hotel9);
         commentRepository.save(description53);
-        Comment description54 = new Comment("",hotel9);
+        Comment description54 = new Comment("Six ensuite bedrooms, can be booked individually or by groups of up to 12",hotel9);
         commentRepository.save(description54);
-        Comment description55 = new Comment("",hotel9);
+        Comment description55 = new Comment("Non smoking rooms, rooms accessible via wheelchair.",hotel9);
         commentRepository.save(description55);
 
         //Newport Wales
-        Comment description56 = new Comment("",hotel24);
+        Comment description56 = new Comment("Cuffern Manor has four en-suite double rooms, two single rooms beside 3 acres of beautiful gardens.\n",hotel24);
         commentRepository.save(description56);
-        Comment description57 = new Comment("",hotel24);
+        Comment description57 = new Comment("The accessible shower/toilet in rooms. ",hotel24);
         commentRepository.save(description57);
-        Comment description58 = new Comment("",hotel24);
+        Comment description58 = new Comment("Guide dogs allowed",hotel24);
         commentRepository.save(description58);
-        Comment description59 = new Comment("",hotel24);
+        Comment description59 = new Comment("Wheelchair access to Pembrokeshire Coastal path.",hotel24);
         commentRepository.save(description59);
-        Comment description60 = new Comment("",hotel24);
+        Comment description60 = new Comment("Special wheelchairs for the beach available.",hotel24);
         commentRepository.save(description60);
 
         //Swansee Wales
-        Comment description61 = new Comment("",hotel22);
+        Comment description61 = new Comment("Grounds  accessed via secure electric gate.",hotel22);
         commentRepository.save(description61);
-        Comment description62 = new Comment("",hotel22);
+        Comment description62 = new Comment("Wheelchair accessible cottages hidden away at end of short lane.",hotel22);
         commentRepository.save(description62);
-        Comment description63 = new Comment("",hotel22);
+        Comment description63 = new Comment("Diverse fauna, large variety of wildlife to enjoy or photograph.",hotel22);
         commentRepository.save(description63);
-        Comment description64 = new Comment("",hotel22);
+        Comment description64 = new Comment("Clean air, no light pollution, great for star gazing.",hotel22);
         commentRepository.save(description64);
-        Comment description65 = new Comment("",hotel22);
+        Comment description65 = new Comment("Cottages nested amongst green farmland, woodland and fields.",hotel22);
         commentRepository.save(description65);
 
         //Cardiff
-        Comment description66 = new Comment("",hotel20);
+        Comment description66 = new Comment("Living areas designed to keep tranquility in mind. ",hotel20);
         commentRepository.save(description66);
-        Comment description67 = new Comment("",hotel20);
+        Comment description67 = new Comment("Disabled friendly, wheelchair friendly and dog friendly",hotel20);
         commentRepository.save(description67);
-        Comment description68 = new Comment("",hotel20);
+        Comment description68 = new Comment("Spacious Farmhouse style kitchen has everything you need.",hotel20);
         commentRepository.save(description68);
-        Comment description69 = new Comment("",hotel20);
+        Comment description69 = new Comment("Ramp to patio with level access into the conservatory and kitchen.",hotel20);
         commentRepository.save(description69);
-        Comment description70 = new Comment("",hotel20);
-        commentRepository.save(description70);
 
         //Liverpool
-        Comment description71 = new Comment("",hotel18);
+        Comment description70 = new Comment("Short walk from Liver Building and iconic Albert Dock",hotel18);
+        commentRepository.save(description70);
+        Comment description71 = new Comment("Moorfields Metro Station, Castle Street and Town Hall closeby.",hotel18);
         commentRepository.save(description71);
-        Comment description72 = new Comment("",hotel18);
+        Comment description72 = new Comment("Short trip from Liverpool John Lennon Airport or Manchester International Airport",hotel18);
         commentRepository.save(description72);
-        Comment description73 = new Comment("",hotel18);
-        commentRepository.save(description73);
 
         //London
-        Comment description74 = new Comment("",hotel12);
+        Comment description73 = new Comment("More than a hotel, can be your home away from home. ",hotel12);
+        commentRepository.save(description73);
+        Comment description74 = new Comment("Need one, two or three bedrooms, all are sumptuous, beautifully designed.",hotel12);
         commentRepository.save(description74);
-        Comment description75 = new Comment("",hotel12);
+        Comment description75 = new Comment("Own kitchen, space to work, private chef, 24 hour room service. ",hotel12);
         commentRepository.save(description75);
-        Comment description76 = new Comment("",hotel12);
+        Comment description76 = new Comment("Comfort and privacy of your own home with the added hotel service.",hotel12);
         commentRepository.save(description76);
-        Comment description77 = new Comment("",hotel12);
+        Comment description77 = new Comment("Lift and wheelchair accessible bathroom.",hotel12);
         commentRepository.save(description77);
-        Comment description78 = new Comment("",hotel12);
-        commentRepository.save(description78);
 
         //Manchaster
-        Comment description79 = new Comment("",hotel14);
+        Comment description78 = new Comment("Clayton Hotel perfectly located in the heart of the city on Portland Street.",hotel12);
+        commentRepository.save(description78);
+        Comment description79 = new Comment("5 minute walk from Piccadilly Gardens.",hotel14);
         commentRepository.save(description79);
-        Comment description80 = new Comment("",hotel14);
+        Comment description80 = new Comment("Transport links, shopping, art galleries, bars & restaurants all closeby.",hotel14);
         commentRepository.save(description80);
-        Comment description81 = new Comment("",hotel14);
+        Comment description81 = new Comment("Grab rails in toilet and shower, ample floor space. ",hotel14);
         commentRepository.save(description81);
-        Comment description82 = new Comment("",hotel14);
+        Comment description82 = new Comment("Relax with complimentary WiFi and multi-channel HD TV.",hotel14);
         commentRepository.save(description82);
-        Comment description83 = new Comment("",hotel14);
-        commentRepository.save(description83);
 
         //Birmigham
-        Comment description84 = new Comment("",hotel16);
+        Comment description83 = new Comment("Proud partner alongside AccessABLE, the UKs leading provider of access information.",hotel16);
+        commentRepository.save(description83);
+        Comment description84 = new Comment("Enjoy countryside views from fully air conditioned guest rooms.",hotel16);
         commentRepository.save(description84);
-        Comment description85 = new Comment("",hotel16);
+        Comment description85 = new Comment("24-hour room service menu with delicious dishes.",hotel16);
         commentRepository.save(description85);
-        Comment description86 = new Comment("",hotel16);
+        Comment description86 = new Comment("Bring your furry friend",hotel16);
         commentRepository.save(description86);
-        Comment description87 = new Comment("",hotel16);
-        commentRepository.save(description87);
-
     }
 
 
