@@ -32,11 +32,14 @@ const cityHotels = selectedCity.hotels;
     <li>{selectedCityHotel.contact_number}</li>
     <a href= {selectedCityHotel.website}>Webpage</a>
     <li>{selectedCityHotel.address}</li>
-    <li>{selectedCityHotel.img}</li>
-    {/* <li>{selectedCityHotel.comments}</li> */}
+{/* to tell the code to get this from the api, we must specified or tell it to get inside of it. it does not know it is an array */}
+    <li>{selectedCityHotel.comments[0].name}</li>
+    <li>{selectedCityHotel.comments[1].name}</li>
+    <li>{selectedCityHotel.comments[2].name}</li>
+
     {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
 
-    <iframe width="560" height="315" src={selectedCityHotel.img} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   </div>
   
