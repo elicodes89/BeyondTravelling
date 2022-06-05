@@ -48,8 +48,7 @@ const cityHotels = selectedCity.hotels;
 else {
   return (
     <>
-
-    <h1>hey</h1>
+    <h1>Oops. Try Again.</h1>
     </>
   )
 }
