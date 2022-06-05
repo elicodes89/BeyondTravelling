@@ -141,7 +141,7 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel17 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
         hotelRepository.save(hotel17);
         Hotel hotel18 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/WoodCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/woodhillhouse3.jpeg");
-        hotelRepository.save(hotel4);
+        hotelRepository.save(hotel18);
 
         //This is the comment for Inverness
         Comment description1 = new Comment("Delicious meals from early breakfast till dinner",hotel5);
@@ -153,31 +153,31 @@ public class DataLoader implements ApplicationRunner {
         Comment description4 = new Comment("Business or leisure, your stay at hotel will be very comfortable",hotel5);
         commentRepository.save(description4);
 
-//        //This is the section for videos
+//        //This is the section for videos these line can be deleted!!!
         //Welcome to Beyond Travelling
 //        Video vide1 = new Video("https://www.youtube.com/embed/swyWGfjBbAA", hotel5);
 //        videoRepository.save(vide1);
         //Welcome to the deaf friendly Crowne Plaza Hotel Dublin
-        Video vide2 = new Video("https://www.youtube.com/embed/AZlVAc9Ip8I", hotel5);
-        videoRepository.save(vide2);
-        //This Hotel is near a hospital
-        Video vide3 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel5);
-        videoRepository.save(vide3);
-        //Click below for more BSL content
-//        Video vide4 = new Video("https://www.youtube.com/embed/9EI1JkhlhOI", hotel5);
-//        videoRepository.save(vide4);
-        //This hotel has a 24 hour reception
-        Video vide5 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel5);
-        videoRepository.save(vide5);
-        //This hotel has visual fire alarms
-        Video vide6 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
-        videoRepository.save(vide6);
-        //This video is wheelchair accessible
-        Video vide7 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel5);
-        videoRepository.save(vide7);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide8 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel5);
-        videoRepository.save(vide8);
+//        Video vide2 = new Video("https://www.youtube.com/embed/AZlVAc9Ip8I", hotel5);
+//        videoRepository.save(vide2);
+//        //This Hotel is near a hospital
+//        Video vide3 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel5);
+//        videoRepository.save(vide3);
+//        //Click below for more BSL content
+////        Video vide4 = new Video("https://www.youtube.com/embed/9EI1JkhlhOI", hotel5);
+////        videoRepository.save(vide4);
+//        //This hotel has a 24 hour reception
+//        Video vide5 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel5);
+//        videoRepository.save(vide5);
+//        //This hotel has visual fire alarms
+//        Video vide6 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel5);
+//        videoRepository.save(vide6);
+//        //This video is wheelchair accessible
+//        Video vide7 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel5);
+//        videoRepository.save(vide7);
+//        //Bathroom doors are wider than 32 inch and have grab rails
+//        Video vide8 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel5);
+//        videoRepository.save(vide8);
 
         //Video
         Video vide9 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel1);
