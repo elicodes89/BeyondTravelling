@@ -44,7 +44,7 @@ function App () {
         {/* <Button variant="light" onClick = { setWheelchair(false) }>Wheelchair to go to hotels</Button>  */}
         <AccessibleHotels />
         <Button variant="light" onClick = { () => {setWheelchair(false)} }>GO BACK</Button>
-
+        <Footer />
         </>
     
         );
@@ -53,6 +53,8 @@ function App () {
       return (
         <>
         <BSL />
+        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
+        <Footer/>
         <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK NOW!! </Button>
         </>
       )
