@@ -1,7 +1,10 @@
 .title {
     text-align: center;
     font-size: large;
-    padding-top: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-color: black;
+
 }
 
 .flex-container {
@@ -9,7 +12,7 @@
     width: 100%;
 }
 
-.images{
+.homeButtons{
     border-color: black;
     border-radius: 20px;
     border-width: 20px;

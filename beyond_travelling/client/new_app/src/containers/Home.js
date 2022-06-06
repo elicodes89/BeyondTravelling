@@ -1,5 +1,5 @@
 import React , { useState } from 'react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import './Home.css';
 import Wheelchair from '../access_icons/wheelchair.png';
 import Sign from '../access_icons/sign.png';
@@ -16,12 +16,12 @@ function Home () {
 
 return (
   <>
-  <Header />
+  {/* <Header /> */}
     <div className='title'>
-    <h2>Your travel app for accessible holidays</h2>
+    <h2>YOUR TRAVEL APP FOR ACCESIBLE HOLIDAYS</h2>
     <div className='homeButtons'>
-    <img onClick = { () => {setWheelchair(true)} } className="images" src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
-    <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
+    <img onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
+    <img onClick = { () => {setBsl(true)} } src={Sign} alt='signimg' width="500" height="500"/>
     </div>
     </div>
   </>
@@ -32,8 +32,7 @@ return (
 
   return (
       <>
-      <Header />
-      {/* <Button variant="light" onClick = { setWheelchair(false) }>Wheelchair to go to hotels</Button>  */}
+      {/* <Header /> */}
       <AccessibleHotels />
       <Button variant="light" onClick = { () => {setWheelchair(false)} }>GO BACK</Button>
       </>
