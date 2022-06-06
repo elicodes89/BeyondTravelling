@@ -54,8 +54,9 @@ function App () {
         <>
         <BSL />
         <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
+
+        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
         <Footer/>
-        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK NOW!! </Button>
         </>
       )
   }
