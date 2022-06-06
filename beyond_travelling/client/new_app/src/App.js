@@ -8,6 +8,7 @@ import Home from './containers/Home';
 import BSL from './components/bsl/BSL';
 // import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
+import Footer from './components/Footer';
 
 
 function App () {
@@ -24,12 +25,9 @@ function App () {
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
         <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button>
         <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>  
-        
-        <div className = "footer">
-          <p>© 2022 Created by: Annika, Elisol & Mate </p>
-        </div>
+        <Footer />
         </>
-        );
+      );
     
   } else if (wheelchair === true) {
 
