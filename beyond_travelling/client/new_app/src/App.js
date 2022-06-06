@@ -8,6 +8,7 @@ import BSL from './components/bsl/BSL';
 import Button from 'react-bootstrap/Button';
 import Wheelchair from '../src/access_icons/wheelchair.png';
 import Sign from '../src/access_icons/sign.png';
+import Footer from './components/Footer';
 
 
 function App () {
@@ -24,17 +25,16 @@ function App () {
         <div className = "homeButtons">
         <div className='flex-container'>
           <img onClick = { () => {setWheelchair(true)} } className="images" src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
-          {/* <Button variant="light" onClick = { () => {setWheelchair(true)} }>Wheelchair hotels</Button> */}
           <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
-          {/* <Button variant="light" onClick = { () => {setBsl(true)} }>BSL hotels</Button>   */}
           </div>
         </div>
         
         <div className = "footer">
           <p>© 2022 Created by: Annika, Elisol & Mate </p>
         </div>
+        <Footer />
         </>
-        );
+      );
     
   } else if (wheelchair === true) {
 

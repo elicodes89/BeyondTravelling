@@ -22,12 +22,13 @@ const HotelDetail = (props) => {
       <>
       {/* <a> {region.name} </a> */}
       <p>{citiesList}</p>
-      <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" />
+      {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
       </>
     )
   } else if(selectedCity){
     return (
       <>
+      <h3>Please choose the hotel</h3>
       <CityHotels selectedCity={selectedCity}/>
       </>
     )
@@ -36,7 +37,7 @@ const HotelDetail = (props) => {
     return (
       <>
       {/* <a> {region.name} </a> */}
-      <h1>no cities, so no click</h1>
+      <h1>No cities available</h1>
      
 
       </>

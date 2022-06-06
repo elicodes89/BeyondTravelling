@@ -8,7 +8,7 @@ const HotelDetail = (props) => {
   const cities = region.cities;
 
   const citiesList = cities.map((city, index) => {
-    return <div><Button variant="light" onClick = {() => onCityClick(city) }>{city.name}</Button></div>
+    return <div><Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "" width = "200px" /></Button></div>
   })
 
   const onCityClick = function(city){
@@ -25,6 +25,7 @@ const HotelDetail = (props) => {
   } else if(selectedCity){
     return (
       <>
+      <h2>Please choose hotel</h2>
       <CityHotels selectedCity={selectedCity}/>
       </>
     )
@@ -33,7 +34,7 @@ const HotelDetail = (props) => {
     return (
       <>
       {/* <a> {region.name} </a> */}
-      <h1>no BSL cities, so no click</h1>
+      <h1>Not clicked on city</h1>
       </>
     );
   };

@@ -25,4 +25,20 @@
   text-align:center;
 }
 
+.intro_video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.hotel_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  width: 45rem;
+  height: 10rem;
+}
+
 
