@@ -178,17 +178,60 @@ public class DataLoader implements ApplicationRunner {
         Hotel hotel8 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/London/The_Guardsman_London.jpeg");
         hotelRepository.save(hotel8);
 
+        //London
+        Comment description73 = new Comment("More than a hotel, can be your home away from home. ",hotel8);
+        commentRepository.save(description73);
+        Comment description74 = new Comment("Need one, two or three bedrooms, all are sumptuous, beautifully designed.",hotel8);
+        commentRepository.save(description74);
+        Comment description75 = new Comment("Own kitchen, space to work, private chef, 24 hour room service. ",hotel8);
+        commentRepository.save(description75);
+        Comment description76 = new Comment("Comfort and privacy of your own home with the added hotel service.",hotel8);
+        commentRepository.save(description76);
+        Comment description77 = new Comment("Lift and wheelchair accessible bathroom.",hotel8);
+        commentRepository.save(description77);
+
         //This is the hotel in Manchester
         Hotel hotel9 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/ClaytonCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Manchester/Clayton_Hotel_Manchaster.jpeg");
         hotelRepository.save(hotel9);
+
+        //Manchaster
+        Comment description78 = new Comment("Clayton Hotel perfectly located in the heart of the city on Portland Street.",hotel9);
+        commentRepository.save(description78);
+        Comment description79 = new Comment("5 minute walk from Piccadilly Gardens.",hotel9);
+        commentRepository.save(description79);
+        Comment description80 = new Comment("Transport links, shopping, art galleries, bars & restaurants all closeby.",hotel9);
+        commentRepository.save(description80);
+        Comment description81 = new Comment("Grab rails in toilet and shower, ample floor space. ",hotel9);
+        commentRepository.save(description81);
+        Comment description82 = new Comment("Relax with complimentary WiFi and multi-channel HD TV.",hotel9);
+        commentRepository.save(description82);
 
         //These are the hotels in Birmingham
         Hotel hotel10 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/HolidayCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Birmingham/Aparthotel_Birmingham.jpeg");
         hotelRepository.save(hotel10);
 
+        //Birmigham
+        Comment description83 = new Comment("Proud partner alongside AccessABLE, the UKs leading provider of access information.",hotel10);
+        commentRepository.save(description83);
+        Comment description84 = new Comment("Enjoy countryside views from fully air conditioned guest rooms.",hotel10);
+        commentRepository.save(description84);
+        Comment description85 = new Comment("24-hour room service menu with delicious dishes.",hotel10);
+        commentRepository.save(description85);
+        Comment description86 = new Comment("Bring your furry friend",hotel10);
+        commentRepository.save(description86);
+
+
         //These are the hotels in Liverpool
         Hotel hotel11 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/InnsideCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Liverpool/Innside_Liverpool.jpeg");
         hotelRepository.save(hotel11);
+
+        //Hotel in Liverpool
+        Comment description87 = new Comment("Short walk from Liver Building and iconic Albert Dock",hotel11);
+        commentRepository.save(description87);
+        Comment description88 = new Comment("Moorfields Metro Station, Castle Street and Town Hall closeby.",hotel11);
+        commentRepository.save(description88);
+        Comment description89 = new Comment("Short trip from Liverpool John Lennon Airport or Manchester International Airport",hotel11);
+        commentRepository.save(description89);
 
         //This is the cities in Wales
         City city14 = new City("Cardiff",country3,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/Cardiff.jpeg");
@@ -321,7 +364,6 @@ public class DataLoader implements ApplicationRunner {
         Comment description50 = new Comment("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab railsr",hotel18);
         commentRepository.save(description50);
 
-
         //This is the section for videos these line can be deleted!!!
         //Welcome to Beyond Travelling
         Video vide1 = new Video("https://www.youtube.com/embed/swyWGfjBbAA", hotel15);
@@ -444,50 +486,6 @@ public class DataLoader implements ApplicationRunner {
         Video vide38 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel17);
         videoRepository.save(vide38);
 
-
-
-
-
-
-
-
-
-
-        
-
-        //London
-        Comment description73 = new Comment("More than a hotel, can be your home away from home. ",hotel8);
-        commentRepository.save(description73);
-        Comment description74 = new Comment("Need one, two or three bedrooms, all are sumptuous, beautifully designed.",hotel8);
-        commentRepository.save(description74);
-        Comment description75 = new Comment("Own kitchen, space to work, private chef, 24 hour room service. ",hotel8);
-        commentRepository.save(description75);
-        Comment description76 = new Comment("Comfort and privacy of your own home with the added hotel service.",hotel8);
-        commentRepository.save(description76);
-        Comment description77 = new Comment("Lift and wheelchair accessible bathroom.",hotel8);
-        commentRepository.save(description77);
-
-        //Manchaster
-        Comment description78 = new Comment("Clayton Hotel perfectly located in the heart of the city on Portland Street.",hotel9);
-        commentRepository.save(description78);
-        Comment description79 = new Comment("5 minute walk from Piccadilly Gardens.",hotel9);
-        commentRepository.save(description79);
-        Comment description80 = new Comment("Transport links, shopping, art galleries, bars & restaurants all closeby.",hotel9);
-        commentRepository.save(description80);
-        Comment description81 = new Comment("Grab rails in toilet and shower, ample floor space. ",hotel9);
-        commentRepository.save(description81);
-        Comment description82 = new Comment("Relax with complimentary WiFi and multi-channel HD TV.",hotel9);
-        commentRepository.save(description82);
-
-        //Birmigham
-        Comment description83 = new Comment("Proud partner alongside AccessABLE, the UKs leading provider of access information.",hotel10);
-        commentRepository.save(description83);
-        Comment description84 = new Comment("Enjoy countryside views from fully air conditioned guest rooms.",hotel10);
-        commentRepository.save(description84);
-        Comment description85 = new Comment("24-hour room service menu with delicious dishes.",hotel10);
-        commentRepository.save(description85);
-        Comment description86 = new Comment("Bring your furry friend",hotel10);
-        commentRepository.save(description86);
     }
 
 
