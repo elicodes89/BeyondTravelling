@@ -8,7 +8,7 @@ const cityHotels = selectedCity.hotels;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
     return <div>
-      <Button variant="light" onClick = {() => onCityClick(cityHotel) }><img src= {cityHotel.img} alt= "" width = "200px" /></Button></div>
+      <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "200px" /></Button></div>
 
   })
 
@@ -30,7 +30,9 @@ const cityHotels = selectedCity.hotels;
 } else if(selectedCityHotel != null){
   return (
   <div>
-    <h2>{selectedCityHotel.hotel_name}</h2>   
+    <h2>{selectedCityHotel.hotel_name}</h2> 
+{/* make sure you fix this elisol */}
+    <li><img src={selectedCityHotel.img2}/></li>  
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>
