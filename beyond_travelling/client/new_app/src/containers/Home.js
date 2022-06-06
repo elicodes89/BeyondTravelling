@@ -19,10 +19,10 @@ return (
   {/* <Header /> */}
     <div className='title'>
     <h2>YOUR TRAVEL APP FOR ACCESIBLE HOLIDAYS</h2>
-    <div className='homeButtons'>
-    <img onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
-    <img onClick = { () => {setBsl(true)} } src={Sign} alt='signimg' width="500" height="500"/>
     </div>
+    <div className='homeButtons'>
+    <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
+    <img className = "homeImage" onClick = { () => {setBsl(true)} } src={Sign} alt='signimg' width="500" height="500"/>
     </div>
   </>
 

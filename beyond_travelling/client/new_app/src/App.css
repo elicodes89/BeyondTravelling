@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding-bottom: 50px;
 }
 
 .wheelchair{
@@ -22,7 +25,11 @@
 
 .footer {
   text-align:center;
-  
+}
+
+/* this is the header */
+.justify-content-center span{
+  font-size: 45px;
 }
 
 .intro_video{

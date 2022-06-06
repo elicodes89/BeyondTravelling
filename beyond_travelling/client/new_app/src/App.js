@@ -3,8 +3,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './containers/Home';
 import Header from './components/Header';
-
-// import AccessibleHotels from './components/wheelchair/AccessibleHotels';
 // import Header from './components/Header'
 // import BSL from './components/bsl/BSL';
 // import Button from 'react-bootstrap/Button';
@@ -21,9 +19,11 @@ function App () {
 
   // if (wheelchair === false && bsl === false) {
     return (
+      <div className ="App">
         <>
         <Header />
         <Home />
+
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
         {/* <div className = "homeButtons">
         <div className="flex-container">
@@ -33,6 +33,7 @@ function App () {
         </div> */}
         <Footer />
         </>
+        </div>
       );
     
   // } else if (wheelchair === true) {
