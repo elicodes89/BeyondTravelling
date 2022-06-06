@@ -7,7 +7,7 @@ function Header () {
 
 return (
    <>
-   <Navbar  className="justify-content-center" bg="dark" variant="dark">
+   <Navbar  className="justify-content-left" bg="dark" variant="dark">
       <Navbar.Brand href="#">
         <img
           src={logo}

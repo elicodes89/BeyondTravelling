@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 
 const CityHotels = (props) => {
+
 const [selectedCityHotel, setSelectedCityHotel] = useState(null);
 const selectedCity = props.selectedCity;
 const cityHotels = selectedCity.hotels;
+// we declare the variable here so it is globally readable
+
+// initial state of videoExists will be false
+let videoExists = false;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
     return <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "200px" /></Button>
@@ -16,9 +21,24 @@ const cityHotels = selectedCity.hotels;
   }
   setTimeout(task, 1000);
 
+
+  // we can add more functionality to this function
   const onCityClick = function(cityHotel){
     setSelectedCityHotel(cityHotel);
+
 }
+useEffect(() => {
+  // this use effect will run after the second time it runs the function. useefects runs 2 times for better performance. if length of array is 0...
+if (selectedCityHotel != null){
+  if (selectedCityHotel.videos.length > 0){
+    videoExists = true;
+
+  }
+
+}
+},[selectedCityHotel]);
+
+
 
   if (selectedCity != undefined && selectedCityHotel === null) {
     return (
@@ -45,8 +65,11 @@ const cityHotels = selectedCity.hotels;
     <li>{selectedCityHotel.comments[4].name}</li>
     </div>
     <br/>
+
+
     <div className = "hotel_video">
-    <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {/* if videosExists does not exists then...  */}
+    {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
     </div>
   </div>
   
