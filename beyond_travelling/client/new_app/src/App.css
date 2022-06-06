@@ -30,15 +30,15 @@
 .intro_video{
   display: flex;
   align-items: center;
+  margin-left: 25%;
   
 }
 
 .hotel_card{
   display: flex;
   flex-direction:row;
-  margin-top: 5%;
-  width: 100%;
-  height: fit-content;
+  margin: 0 auto;
+  float: none;
 
 }
 
