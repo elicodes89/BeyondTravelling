@@ -7,8 +7,7 @@ const selectedCity = props.selectedCity;
 const cityHotels = selectedCity.hotels;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <div>
-      <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "200px" /></Button></div>
+    return <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "200px" /></Button>
 
   })
 
@@ -32,17 +31,23 @@ const cityHotels = selectedCity.hotels;
   <div>
     <h2>{selectedCityHotel.hotel_name}</h2> 
 {/* make sure you fix this elisol */}
-    <li><img src={selectedCityHotel.img2}/></li>  
+    <img src= {selectedCityHotel.img} alt="hotelimg" width="200px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>
+    <br/>
+    <div className="hotel_description">
+    <h4>Some perks about this hotel:</h4>
     <li>{selectedCityHotel.comments[0].name}</li>
     <li>{selectedCityHotel.comments[1].name}</li>
     <li>{selectedCityHotel.comments[2].name}</li>
     <li>{selectedCityHotel.comments[3].name}</li>
     <li>{selectedCityHotel.comments[4].name}</li>
-
+    </div>
+    <br/>
+    <div className = "hotel_video">
     <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
   
   )  

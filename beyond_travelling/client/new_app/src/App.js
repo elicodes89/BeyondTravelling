@@ -23,10 +23,10 @@ function App () {
         <Home />
         {/* Bootstrap button created with a hook. when user clicks on button, it leads them to wheelchair hotels list */}
         <div className = "homeButtons">
-        <div className='flex-container'>
+        <div className="flex-container">
           <img onClick = { () => {setWheelchair(true)} } className="images" src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
           <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
-          </div>
+        </div>
         </div>
         
         <div className = "footer">
@@ -53,7 +53,7 @@ function App () {
       return (
         <>
         <BSL />
-        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK NOW!! </Button>
+        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
         </>
       )
   }
