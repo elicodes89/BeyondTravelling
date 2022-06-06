@@ -27,7 +27,6 @@ setTimeout(task, 1000);
       <>
 
     <p>{cityHotelsList}</p>
-      {/* <img src= {cityHotelsList.img2} alt= "" width = "200px" /> */}
       </>
     )  
 } else if(selectedCityHotel != null){
@@ -42,8 +41,6 @@ setTimeout(task, 1000);
     <li><a href= {selectedCityHotel.website}>Hotel Website</a></li>
     <li>Address: {selectedCityHotel.address}</li>
     <li>{selectedCityHotel.img}</li>
-    {/* <img src= "https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/ireland_images/countryside2.jpg" alt= "" width = "200px" /> */}
-
 
     <iframe width="560" height="315" src={selectedCityHotel.img} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br></br>
@@ -54,10 +51,10 @@ setTimeout(task, 1000);
 else {
   return (
     <>
-    <h1>Please choose a city</h1>
+    <h1>Oops. Try Again.</h1>
     </>
-  )
-}
-}
+  );
+};
+};
 
 export default CityHotels;
