@@ -53,12 +53,10 @@ function App () {
       return (
         <>
         <BSL />
-<<<<<<< HEAD
+        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
+
         <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
         <Footer/>
-=======
-        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK NOW!! </Button>
->>>>>>> 7e050e9aa25f8cb4746ce3b72f3390f6ac60f231
         </>
       )
   }
