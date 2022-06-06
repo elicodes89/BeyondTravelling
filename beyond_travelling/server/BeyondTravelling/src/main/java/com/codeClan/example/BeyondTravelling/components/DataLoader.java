@@ -280,14 +280,47 @@ public class DataLoader implements ApplicationRunner {
         //This is a hotel in Belfast
         Hotel hotel16 = new Hotel("Meldron Belfast ","+35 02896001680","https://www.maldronhotelbelfastcity.com/room","-5.932631321052927","54.594818490728684","20 Brunswick Street Belfast",city6,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/MaldronCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/maldron1.jpeg");
         hotelRepository.save(hotel16);
+
+        //Maldron Ireland
+        Comment description38 = new Comment("Maldron Hotel is located right in the heart of Belfast city.",hotel16);
+        commentRepository.save(description38);
+        Comment description39 = new Comment("Walking distance to restaurants and historic landmarks.",hotel16);
+        commentRepository.save(description39);
+        Comment description40 = new Comment("Brilliant Customer Service, everything you need for great holidays.",hotel16);
+        commentRepository.save(description40);
+        Comment description41 = new Comment("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel16);
+        commentRepository.save(description41);
         
         //This is a hotel in Galway
         Hotel hotel17 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
         hotelRepository.save(hotel17);
 
+        //Galway Ireland
+        Comment description42 = new Comment("The Dean Galway is your home, right on doorstep of Wild Atlantic Way!",hotel17);
+        commentRepository.save(description42);
+        Comment description43 = new Comment("Hotel offers 100 super comfortable rooms.",hotel17);
+        commentRepository.save(description43);
+        Comment description44 = new Comment("Building has unique historic features, including part of Galway to Clifden railway tunnel.",hotel17);
+        commentRepository.save(description44);
+        Comment description45 = new Comment("Hotel has 4 ground floor rooms, one with full wheelchair access & a wet room",hotel17);
+        commentRepository.save(description45);
+
         //This is a hotel in Donegal
         Hotel hotel18 = new Hotel("Donegal Hotel","+353749541112","https://www.woodhillhouse.com/","-8.403013666358087","54.75839283544279","Wood Road Ardara Donegal F94 E102 Ireland",city8,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/WoodCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Donegal/woodhillhouse3.jpeg");
         hotelRepository.save(hotel18);
+
+        //Donegal
+        Comment description46 = new Comment("Historic coastal house built 17th century. House overlooks beautiful Donegal Highlands.",hotel18);
+        commentRepository.save(description46);
+        Comment description47 = new Comment("Half mile from sea and one quarter from coastal town Ardara on the ‘Wild Atlantic Way’",hotel18);
+        commentRepository.save(description47);
+        Comment description48 = new Comment("Woodhill House well known for high quality and reasonable prices.",hotel18);
+        commentRepository.save(description48);
+        Comment description49 = new Comment("4 ground floor rooms with full wheelchair access & a wet room",hotel18);
+        commentRepository.save(description49);
+        Comment description50 = new Comment("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab railsr",hotel18);
+        commentRepository.save(description50);
+
 
         //This is the section for videos these line can be deleted!!!
         //Welcome to Beyond Travelling
@@ -415,37 +448,10 @@ public class DataLoader implements ApplicationRunner {
 
 
 
-       //Maldron Ireland
-        Comment description38 = new Comment("Maldron Hotel is located right in the heart of Belfast city.",hotel16);
-        commentRepository.save(description38);
-        Comment description39 = new Comment("Walking distance to restaurants and historic landmarks.",hotel16);
-        commentRepository.save(description39);
-        Comment description40 = new Comment("Brilliant Customer Service, everything you need for great holidays.",hotel16);
-        commentRepository.save(description40);
-        Comment description41 = new Comment("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel16);
-        commentRepository.save(description41);
 
-        //Galway Ireland
-        Comment description42 = new Comment("The Dean Galway is your home, right on doorstep of Wild Atlantic Way!",hotel17);
-        commentRepository.save(description42);
-        Comment description43 = new Comment("Hotel offers 100 super comfortable rooms.",hotel17);
-        commentRepository.save(description43);
-        Comment description44 = new Comment("Building has unique historic features, including part of Galway to Clifden railway tunnel.",hotel17);
-        commentRepository.save(description44);
-        Comment description45 = new Comment("Hotel has 4 ground floor rooms, one with full wheelchair access & a wet room",hotel17);
-        commentRepository.save(description45);
 
-        //Donegal
-        Comment description46 = new Comment("Historic coastal house built 17th century. House overlooks beautiful Donegal Highlands.",hotel18);
-        commentRepository.save(description46);
-        Comment description47 = new Comment("Half mile from sea and one quarter from coastal town Ardara on the ‘Wild Atlantic Way’",hotel18);
-        commentRepository.save(description47);
-        Comment description48 = new Comment("Woodhill House well known for high quality and reasonable prices.",hotel18);
-        commentRepository.save(description48);
-        Comment description49 = new Comment("4 ground floor rooms with full wheelchair access & a wet room",hotel18);
-        commentRepository.save(description49);
-        Comment description50 = new Comment("Emergency cord in bathroom, lower bathroom sink, higher level toilet, toilet with grab railsr",hotel18);
-        commentRepository.save(description50);
+
+
 
         
 
