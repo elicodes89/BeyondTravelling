@@ -16,7 +16,7 @@
 }
 
 .flex-container{
-  /* justify-items: left; */
+  justify-items: left;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
