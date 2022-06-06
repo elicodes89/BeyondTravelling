@@ -242,7 +242,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city16);
 
         //These are the hotels in Cardiff
-        Hotel hotel12 = new Hotel("Homefield Holidays","(+44) 01495 764212","https://homefield.wales/"," -2.866228647627431","51.9165695231888","Grosmont, Abergavenny NP7 8EP",city14,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/HomefieldCollage.jpg","");
+        Hotel hotel12 = new Hotel("Homefield Holidays","(+44) 01495 764212","https://homefield.wales/"," -2.866228647627431","51.9165695231888","Grosmont, Abergavenny NP7 8EP",city14,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/HomefieldCollage.jpg","https://github.com/elicodes89/BeyondTravelling/blob/features/working_on_map/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/cardiff_hotel.jpeg?raw=true");
         hotelRepository.save(hotel12);
 
         //Cardiff
