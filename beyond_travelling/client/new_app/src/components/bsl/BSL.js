@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
 import ReactPlayer from 'react-player';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Row, Ratio } from 'react-bootstrap';
 
 // import PlayVideo from './PlayVideo';
 
@@ -29,7 +29,7 @@ const BSL = () => {
    
     return (
         <>
-        <Row xs={4} md={1} className='hotel_card'>
+        <Row xs={'auto'} md={'auto'} lg={'auto'} className='hotel_card'>
         <Card>
             <Card.Body><HotelList regions = {regions}/></Card.Body>
         </Card>
@@ -52,10 +52,14 @@ const BSL = () => {
             {/* <HotelList regions = {regions}/> */}
         {/* </div>   */} 
         <br></br>
-        <div className='intro_video'>
+        <Card.Body>
+        <div className='intro_video' style={{ width: 700, height: 'auto' }}>
+        <Ratio aspectRatio="16x9">
             <ReactPlayer url={"https://www.youtube.com/watch?v=swyWGfjBbAA"}
                 controls={true}/>
+                </Ratio>
             </div>
+            </Card.Body>
         </>
       
     );
