@@ -24,12 +24,8 @@
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
-    /* flex-shrink: 1; */
 }
 
-.footer {
-  text-align:center;
-}
 
 .intro_video{
   display: flex;
@@ -40,7 +36,7 @@
 
 .hotel_card{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-top: 5%;
   width: 45rem;
