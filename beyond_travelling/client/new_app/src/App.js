@@ -53,7 +53,7 @@ function App () {
       return (
         <>
         <BSL />
-        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
+        <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK NOW!! </Button>
         </>
       )
   }
