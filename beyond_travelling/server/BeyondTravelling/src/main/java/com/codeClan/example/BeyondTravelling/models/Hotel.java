@@ -35,6 +35,9 @@ public class Hotel {
     @Column(name = "img")
     private String img;
 
+    @Column(name = "img2")
+    private String img2;
+
     @JsonIgnoreProperties({"hotel"})
     @OneToMany(mappedBy = "hotel", fetch = FetchType.LAZY)
     private List<Video> videos;
@@ -48,7 +51,7 @@ public class Hotel {
     @JoinColumn(name = "city_id", nullable = false)
     private City city;
 
-    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city, String img) {
+    public Hotel(String hotel_name, String contact_number, String website, String longitude, String latitude, String address,City city, String img, String img2) {
         this.hotel_name = hotel_name;
         this.contact_number = contact_number;
         this.website = website;
@@ -57,8 +60,10 @@ public class Hotel {
         this.address = address;
         this.city = city;
         this.img = img;
+        this.img2 = img2;
         this.videos = new ArrayList<>();
         this.comments = new ArrayList<>();
+
     }
 
     public Hotel() {
@@ -150,6 +155,14 @@ public class Hotel {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+    public String getImg2() {
+        return img2;
+    }
+
+    public void setImg2(String img2) {
+        this.img2 = img2;
     }
 }
 
