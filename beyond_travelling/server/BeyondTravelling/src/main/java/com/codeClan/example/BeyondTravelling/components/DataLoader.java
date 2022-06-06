@@ -176,6 +176,7 @@ public class DataLoader implements ApplicationRunner {
 
         //These are the hotels in London
         Hotel hotel8 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/The_Guardsman_London.jpeg");
+        hotelRepository.save(hotel8);
 
         //London
         Comment description73 = new Comment("More than a hotel, can be your home away from home. ",hotel8);
@@ -318,7 +319,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description36);
         Comment description37 = new Comment("Exciting events in Dublin available : for example at the Little Museum, an Irish Sign Language Tour – click here https://www.littlemuseum.ie/irish-sign-language-tour",hotel15);
         commentRepository.save(description37);
-        
+
         //This is a hotel in Belfast
         Hotel hotel16 = new Hotel("Meldron Belfast ","+35 02896001680","https://www.maldronhotelbelfastcity.com/room","-5.932631321052927","54.594818490728684","20 Brunswick Street Belfast",city6,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/MaldronCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/maldron1.jpeg");
         hotelRepository.save(hotel16);
@@ -332,7 +333,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description40);
         Comment description41 = new Comment("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel16);
         commentRepository.save(description41);
-        
+
         //This is a hotel in Galway
         Hotel hotel17 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
         hotelRepository.save(hotel17);

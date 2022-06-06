@@ -164,5 +164,6 @@ public class Hotel {
     public void setImg2(String img2) {
         this.img2 = img2;
     }
+
 }
 
