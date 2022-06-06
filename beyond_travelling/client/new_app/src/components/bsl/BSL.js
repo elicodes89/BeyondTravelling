@@ -26,7 +26,6 @@ const BSL = () => {
     }
     setTimeout(task, 1000);
     
-   
     return (
         <>
         <Row xs={4} md={1} className='hotel_card'>

@@ -28,7 +28,7 @@ const HotelDetail = (props) => {
   } else if(selectedCity){
     return (
       <>
-      <h3>Please choose the hotel</h3>
+      {/* <h3>Please choose the hotel</h3> */}
       <CityHotels selectedCity={selectedCity}/>
       </>
     )
