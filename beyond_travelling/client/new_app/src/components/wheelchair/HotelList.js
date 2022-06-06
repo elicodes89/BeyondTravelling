@@ -21,7 +21,7 @@ const HotelList = ({regions}) => {
       
       <div>
       <ul>
-      <h3>Please choose a city</h3>
+      <h3>Where would you like to go?</h3>
 
         <HotelDetail region={selectedRegion}/>
       </ul>

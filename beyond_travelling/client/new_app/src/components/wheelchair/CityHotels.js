@@ -31,8 +31,8 @@ const cityHotels = selectedCity.hotels;
   return (
   <div>
     <h2>{selectedCityHotel.hotel_name}</h2>   
-    <li>Contact number: {selectedCityHotel.contact_number}</li>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
+    <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>
     <li>{selectedCityHotel.comments[0].name}</li>
     <li>{selectedCityHotel.comments[1].name}</li>
