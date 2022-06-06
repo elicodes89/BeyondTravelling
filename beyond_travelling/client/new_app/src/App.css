@@ -12,11 +12,6 @@
   height: 10rem;
 }
 
-.homeButtons img{
-  border-color: black;
-  border-radius: 20px;
-}
-
 .flex-container{
   /* justify-items: left; */
   display: inline-flex;

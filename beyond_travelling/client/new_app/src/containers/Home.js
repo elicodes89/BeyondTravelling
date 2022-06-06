@@ -19,8 +19,10 @@ return (
   <Header />
     <div className='title'>
     <h2>Your travel app for accessible holidays</h2>
+    <div className='homeButtons'>
     <img onClick = { () => {setWheelchair(true)} } className="images" src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
     <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
+    </div>
     </div>
   </>
 
@@ -34,7 +36,6 @@ return (
       {/* <Button variant="light" onClick = { setWheelchair(false) }>Wheelchair to go to hotels</Button>  */}
       <AccessibleHotels />
       <Button variant="light" onClick = { () => {setWheelchair(false)} }>GO BACK</Button>
-
       </>
   
       );

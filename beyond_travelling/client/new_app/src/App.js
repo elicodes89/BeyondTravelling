@@ -28,10 +28,6 @@ function App () {
           <img onClick = { () => {setBsl(true)} } className="images" src={Sign} alt='signimg' width="500" height="500"/>
         </div>
         </div> */}
-        
-        <div className = "footer">
-          <p>© 2022 Created by: Annika, Elisol & Mate </p>
-        </div>
         <Footer />
         </>
       );
