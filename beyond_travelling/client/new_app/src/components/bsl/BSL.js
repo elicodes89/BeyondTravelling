@@ -34,7 +34,7 @@ const BSL = () => {
         </Row>
         
         <br></br>
-        <Card.Body>
+        {/* <Card.Body>
         <div className='intro_video' style={{width: 700, height: 'auto'}}>
         <Ratio aspectRatio="16x9">
             <ReactPlayer 
@@ -42,7 +42,7 @@ const BSL = () => {
             controls={true}/>
         </Ratio>
         </div>
-        </Card.Body>
+        </Card.Body> */}
         </>
 
     );
