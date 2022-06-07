@@ -8,7 +8,6 @@ const [selectedCityHotel, setSelectedCityHotel] = useState(null);
 const selectedCity = props.selectedCity;
 const cityHotels = selectedCity.hotels;
 // we declare the variable here so it is globally readable
-
 // initial state of videoExists will be false
 let videoExists = false;
 
@@ -37,8 +36,6 @@ if (selectedCityHotel != null){
   }
 }
 },[selectedCityHotel]);
-
-
 
   if (selectedCity != undefined && selectedCityHotel === null) {
     return (
@@ -73,10 +70,8 @@ if (selectedCityHotel != null){
     </div>
   </div>
   </div>
-  
   )  
-}
-else {
+} else {
   return (
     <>
     <h1>Oops. Try Again.</h1>
