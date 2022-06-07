@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
 import ReactPlayer from 'react-player';
 import { Card, Col, Row } from 'react-bootstrap';
-
 // import PlayVideo from './PlayVideo';
 
 const BSL = () => {
