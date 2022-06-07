@@ -366,124 +366,127 @@ public class DataLoader implements ApplicationRunner {
 
         //This is the section for videos these line can be deleted!!!
         //Welcome to Beyond Travelling
-        Video vide1 = new Video("https://www.youtube.com/embed/swyWGfjBbAA", hotel15);
+        Video vide1 = new Video("https://www.youtube.com/embed/NbkQvmhE-JE", hotel15);
         videoRepository.save(vide1);
         //Welcome to the deaf friendly Crowne Plaza Hotel Dublin
-        Video vide2 = new Video("https://www.youtube.com/embed/AZlVAc9Ip8I", hotel15);
+        Video vide2 = new Video("https://www.youtube.com/embed/pGh1fp_sjUg", hotel15);
         videoRepository.save(vide2);
         //This Hotel is near a hospital
-        Video vide3 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel15);
+        Video vide3 = new Video("https://www.youtube.com/embed/IAwRYWODBfQ", hotel15);
         videoRepository.save(vide3);
         //Click below for more BSL content
-        Video vide4 = new Video("https://www.youtube.com/embed/9EI1JkhlhOI", hotel15);
+        Video vide4 = new Video("https://www.youtube.com/embed/mFE_UTp1TeQ", hotel15);
         videoRepository.save(vide4);
         //This hotel has a 24 hour reception
-        Video vide5 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel15);
+        Video vide5 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel15);
         videoRepository.save(vide5);
         //This hotel has visual fire alarms
-        Video vide6 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel15);
+        Video vide6 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel15);
         videoRepository.save(vide6);
-        //This video is wheelchair accessible
-        Video vide7 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel15);
+        //Click on the hotel link for more information
+        Video vide7 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel15);
         videoRepository.save(vide7);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide8 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel15);
+        //Hotel has captioned Tv
+        Video vide8 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel15);
         videoRepository.save(vide8);
+        //Full english breakfast
+        Video video39 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel15);
+        videoRepository.save(video39);
 
-        //Video
-        Video vide9 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel1);
+        //Video --  //Hotel has captioned Tv
+        Video vide9 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel1);
         videoRepository.save(vide9);
         //This hotel has a 24 hour reception
-        Video vide10 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel1);
+        Video vide10 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel1);
         videoRepository.save(vide10);
         //This hotel has visual fire alarms
-        Video vide11 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel1);
+        Video vide11 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel1);
         videoRepository.save(vide11);
-        //This video is wheelchair accessible
-        Video vide12 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel1);
+        //Click on the link for more info
+        Video vide12 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel1);
         videoRepository.save(vide12);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide13 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel1);
+        //Full english breakfast
+        Video vide13 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel1);
         videoRepository.save(vide13);
 
-        //Hotel 2
-        Video vide14 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel8);
+        //Hotel 2 --  //Hotel has captioned Tv
+        Video vide14 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel8);
         videoRepository.save(vide14);
         //This hotel has a 24 hour reception
-        Video vide15 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel8);
+        Video vide15 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel8);
         videoRepository.save(vide15);
         //This hotel has visual fire alarms
-        Video vide16 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel8 );
+        Video vide16 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel8 );
         videoRepository.save(vide16);
-        //This video is wheelchair accessible
-        Video vide17 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel8);
+        //Click ont he link for more info
+        Video vide17 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel8);
         videoRepository.save(vide17);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide18 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel8);
+        //Full english breakfast
+        Video vide18 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel8);
         videoRepository.save(vide18);
 
-        //Hotel 3
-        Video vide19 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel3);
+        //Hotel 3 --  //Hotel has captioned Tv
+        Video vide19 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel3);
         videoRepository.save(vide19);
         //This hotel has a 24 hour reception
-        Video vide20 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel3);
+        Video vide20 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel3);
         videoRepository.save(vide20);
         //This hotel has visual fire alarms
-        Video vide21 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel3);
+        Video vide21 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel3);
         videoRepository.save(vide21);
-        //This video is wheelchair accessible
-        Video vide22 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel3);
+        //Click here for more info
+        Video vide22 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel3);
         videoRepository.save(vide22);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide23 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel3);
+        //Full english breakfast
+        Video vide23 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel3);
         videoRepository.save(vide23);
 
-        //Hotel 4
-        Video vide24 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY",hotel13);
+        //Hotel 4 --  //Hotel has captioned Tv
+        Video vide24 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel13);
         videoRepository.save(vide24);
         //This hotel has a 24 hour reception
-        Video vide25 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel13);
+        Video vide25 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel13);
         videoRepository.save(vide25);
         //This hotel has visual fire alarms
-        Video vide26 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel13);
+        Video vide26 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel13);
         videoRepository.save(vide26);
-        //This video is wheelchair accessible
-        Video vide27 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA",hotel13);
+        //Click here for more info
+        Video vide27 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel13);
         videoRepository.save(vide27);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide28 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel13);
+        //Full english breakfast
+        Video vide28 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel13);
         videoRepository.save(vide28);
 
-        //Hotel 5
-        Video vide29 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel18);
+        //Hotel 5 --  //Hotel has captioned Tv
+        Video vide29 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel18);
         videoRepository.save(vide29);
         //This hotel has a 24 hour reception
-        Video vide30 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel18);
+        Video vide30 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel18);
         videoRepository.save(vide30);
         //This hotel has visual fire alarms
-        Video vide31 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel18);
+        Video vide31 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel18);
         videoRepository.save(vide31);
-        //This video is wheelchair accessible
-        Video vide32 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel18);
+        //Click here for more info
+        Video vide32 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel18);
         videoRepository.save(vide32);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide33 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel18);
+        //Full english breakfast
+        Video vide33 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel18);
         videoRepository.save(vide33);
 
-        //Hotel 6
-        Video vide34 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY",hotel17);
+        //Hotel 6 --  //Hotel has captioned Tv
+        Video vide34 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel17);
         videoRepository.save(vide34);
         //This hotel has a 24 hour reception
-        Video vide35 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel17);
+        Video vide35 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel17);
         videoRepository.save(vide35);
         //This hotel has visual fire alarms
-        Video vide36 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel17);
+        Video vide36 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel17);
         videoRepository.save(vide36);
-        //This video is wheelchair accessible
-        Video vide37 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA",hotel17);
+        //Click here for more info
+        Video vide37 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel17);
         videoRepository.save(vide37);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide38 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel17);
+        //Full english breakfast
+        Video vide38 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel17);
         videoRepository.save(vide38);
 
     }
