@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 import Wheelchair from '../src/access_icons/wheelchair.png';
 import Sign from '../src/access_icons/sign.png';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 
 
 function App () {
@@ -29,9 +30,7 @@ function App () {
           </div>
         </div>
         
-        <div className = "footer">
-          <p>© 2022 Created by: Annika, Elisol & Mate </p>
-        </div>
+        
         <Footer />
         </>
       );
