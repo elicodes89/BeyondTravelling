@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
+import './Wheelchair.css';
 
 const CityHotels = (props) => {
 
@@ -12,7 +13,7 @@ const cityHotels = selectedCity.hotels;
 let videoExists = false;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "600px" /></Button>
+    return <Button variant="white" onClick = {() => onCityClick(cityHotel) }><span className = "hotelName">{cityHotel.hotel_name}</span><br/><img src={cityHotel.img} alt= "hotel_collage" width = "600px" /></Button>
 
   })
 
