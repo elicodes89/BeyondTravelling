@@ -48,7 +48,7 @@ if (selectedCityHotel != null){
   <div className = "row">
     <div className = "col-6">
     <h2>{selectedCityHotel.hotel_name}</h2> 
-    <img src= {selectedCityHotel.img} alt="hotelimg" width="700px"/>
+    <img src= {selectedCityHotel.img2} alt="hotelimg" height = "550px" width="600px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>
@@ -59,7 +59,6 @@ if (selectedCityHotel != null){
     <li>{selectedCityHotel.comments[1].name}</li>
     <li>{selectedCityHotel.comments[2].name}</li>
     <li>{selectedCityHotel.comments[3].name}</li>
-    <li>{selectedCityHotel.comments[4].name}</li>
     </div>
     <br/>
     <div className = "col-6">
