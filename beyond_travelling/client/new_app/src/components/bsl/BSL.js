@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
-import ReactPlayer from 'react-player';
-import { Card, Row, Ratio } from 'react-bootstrap';
+import './BSL.css';
+import { Card, Row } from 'react-bootstrap';
 
 
 const BSL = () => {

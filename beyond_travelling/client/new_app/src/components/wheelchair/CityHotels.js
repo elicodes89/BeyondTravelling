@@ -12,7 +12,7 @@ const cityHotels = selectedCity.hotels;
 let videoExists = false;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <Button variant="white" onClick = {() => onCityClick(cityHotel) }><span className = "hotelName">{cityHotel.hotel_name}</span><br/><img src={cityHotel.img} alt= "hotel_collage" width = "600px" /></Button>
+    return <Button variant="white" onClick = {() => onCityClick(cityHotel) }><span className = "hotelName">{cityHotel.hotel_name}</span><br/><img src={cityHotel.img2} alt= "hotel_collage" height = "550px" width = "550px" /></Button>
 
   })
 
@@ -48,7 +48,7 @@ if (selectedCityHotel != null){
   <div className = "row">
     <div className = "col-6">
     <h2>{selectedCityHotel.hotel_name}</h2> 
-    <img src= {selectedCityHotel.img2} alt="hotelimg" height = "550px" width="600px"/>
+    <img src= {selectedCityHotel.img} alt="hotelimg" height = "550px" width="600px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>
