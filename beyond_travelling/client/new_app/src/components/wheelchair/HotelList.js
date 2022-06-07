@@ -7,7 +7,7 @@ const HotelList = ({regions}) => {
 
 
     const regionsItems = regions.map((region, index) => {
-      return <div><Button variant="light" onClick = {() => onRegionClick(region) }><img src= {region.img} alt= "" width = "200px" /></Button></div>
+      return <Button variant="light" onClick = {() => onRegionClick(region) }><img src= {region.img} alt= "regionimages" width = "330px" height = "320px" /></Button>
 
     })
 
@@ -21,12 +21,11 @@ const HotelList = ({regions}) => {
       
       <div>
       <ul>
-      <h3>Please choose a city</h3>
-
+      <h3>Where would you like to go?</h3>
         <HotelDetail region={selectedRegion}/>
       </ul>
     </div>
-    )
+    );
 
   } else if (!selectedRegion) {
     return (      

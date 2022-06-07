@@ -1,11 +1,26 @@
-.title {
+div.title {
     text-align: center;
     font-size: large;
-    padding-top: 20px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    border-color: black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .flex-container {
     display: block;
     width: 100%;
+}
+
+div.homeButtons{
+    /* do not delete these 3 please */
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 30px;
 }
 

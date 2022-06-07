@@ -8,7 +8,7 @@ const HotelDetail = (props) => {
   const cities = region.cities;
 
   const citiesList = cities.map((city, index) => {
-    return <div><Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "" width = "200px" /></Button></div>
+    return <Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "citiesimages" width = "330px" height = "320px" /></Button>
   })
   // console.log(cities);
 
@@ -28,7 +28,7 @@ const HotelDetail = (props) => {
   } else if(selectedCity){
     return (
       <>
-      <h3>Please choose the hotel</h3>
+      <h3>Great! You can now navigate through the hotels.</h3>
       <CityHotels selectedCity={selectedCity}/>
       </>
     )

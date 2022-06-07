@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player';
 import { Card, Col, Row, Ratio, Container } from 'react-bootstrap';
 import { alignProperty } from '@mui/material/styles/cssUtils';
 
-// import PlayVideo from './PlayVideo';
 
 const BSL = () => {
     const [regions, setRegions] = useState([]);
@@ -27,7 +26,6 @@ const BSL = () => {
     }
     setTimeout(task, 1000);
     
-   
     return (
         <>
         <Row xs={'auto'} md={'auto'} className='hotel_card'>

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding-bottom: 50px;
 }
 
 .wheelchair{
@@ -13,13 +16,17 @@
 }
 
 .flex-container{
-
-  justify-items: center;
+  justify-items: left;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+
+/* this is the header */
+.justify-content-left span{
+  font-size: 40px;
+}
 
 .intro_video{
   display: flex;

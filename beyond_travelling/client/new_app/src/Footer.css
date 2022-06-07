@@ -1,10 +1,12 @@
 .main-footer{
     color: rgb(47, 45, 45);
-    background-color: rgb(216, 197, 197);
+    background-color: #FFBD58;
+    /* #FFBD58 */
     padding-top: 4em;
     position: relative;
-    bottom: 0%;
+    bottom: 1%;
     width:100%;
+    font-size: 25px;
     text-align: center;
 }
 
