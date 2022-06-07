@@ -74,7 +74,7 @@ if (selectedCityHotel != null){
 } else {
   return (
     <>
-    <h1>Oops. Try Again.</h1>
+    <h1>Oops. Try Again!!</h1>
     </>
   );
 };
