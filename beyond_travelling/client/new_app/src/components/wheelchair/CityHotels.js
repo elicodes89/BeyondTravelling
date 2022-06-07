@@ -12,7 +12,7 @@ const cityHotels = selectedCity.hotels;
 let videoExists = false;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "200px" /></Button>
+    return <Button variant="light" onClick = {() => onCityClick(cityHotel) }>{cityHotel.hotel_name}<br/><img src={cityHotel.img} alt= "hotel_collage" width = "600px" /></Button>
 
   })
 
@@ -34,7 +34,6 @@ if (selectedCityHotel != null){
     videoExists = true;
 
   }
-
 }
 },[selectedCityHotel]);
 
@@ -51,7 +50,7 @@ if (selectedCityHotel != null){
   <div>
     <h2>{selectedCityHotel.hotel_name}</h2> 
 {/* make sure you fix this elisol */}
-    <img src= {selectedCityHotel.img} alt="hotelimg" width="200px"/>
+    <img src= {selectedCityHotel.img} alt="hotelimg" width="700px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
     <li>Address: {selectedCityHotel.address}</li>

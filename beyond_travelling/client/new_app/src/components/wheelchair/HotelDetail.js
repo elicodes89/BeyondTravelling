@@ -8,7 +8,7 @@ const HotelDetail = (props) => {
   const cities = region.cities;
 
   const citiesList = cities.map((city, index) => {
-    return <Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "" width = "200px" /></Button>
+    return <Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "citiesimages" width = "330px" height = "320px" /></Button>
   })
   // console.log(cities);
 

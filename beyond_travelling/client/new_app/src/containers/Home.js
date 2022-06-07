@@ -18,7 +18,7 @@ return (
   <>
   {/* <Header /> */}
     <div className='title'>
-    <h2>YOUR TRAVEL APP FOR ACCESIBLE HOLIDAYS</h2>
+    <h2>YOUR TRAVEL APP FOR ACCESSIBLE HOLIDAYS</h2>
     </div>
     <div className='homeButtons'>
     <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
