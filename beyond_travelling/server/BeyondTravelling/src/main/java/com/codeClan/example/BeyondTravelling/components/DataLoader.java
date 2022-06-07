@@ -54,7 +54,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city19);
 
         //This is the hotels in Edinburgh
-        Hotel hotel1 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/EdenLockeCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/Eden_Locke_EDI.jpeg");
+        Hotel hotel1 = new Hotel("Eden Locke","0330 056 3363","https://www.lockeliving.com/en/edinburgh/eden-locke?utm_source=google-my-business&utm_medium=organic&utm_campaign=eden-locke","-3.205272.","55.952035","127 George St, Edinburgh, EH2 4JN, United Kingdom",city1,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/EdenLockeCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Scotland/Edinburgh/Eden_Locke_EDI.jpeg");
         hotelRepository.save(hotel1 );
 
         // Eden Lock Edinburgh
@@ -175,7 +175,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city13);
 
         //These are the hotels in London
-        Hotel hotel8 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/London/The_Guardsman_London.jpeg");
+        Hotel hotel8 = new Hotel("The Guardsman","0207 309 9200","https://www.guardsmanhotel.com","-0.13703021534406976","51.49950352375432,","1 Vandon Street Westminster, Westminster Borough, London, SW1H 0AH",city10,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/GuardsmanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/London/The_Guardsman_London.jpeg");
         hotelRepository.save(hotel8);
 
         //London
@@ -191,7 +191,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description77);
 
         //This is the hotel in Manchester
-        Hotel hotel9 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/ClaytonCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Manchester/Clayton_Hotel_Manchaster.jpeg");
+        Hotel hotel9 = new Hotel("Clayton Hotel Manchester City Centre","+44 161 433 7580","https://www.claytonhotelmanchestercitycentre.com/","-2.2368257021083737","53.47843255407386","55 Portland St Manchester M1 3HP United Kingdom",city11,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/ClaytonCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Manchester/Clayton_Hotel_Manchaster.jpeg");
         hotelRepository.save(hotel9);
 
         //Manchaster
@@ -207,7 +207,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description82);
 
         //These are the hotels in Birmingham
-        Hotel hotel10 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/HolidayCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Birmingham/Aparthotel_Birmingham.jpeg");
+        Hotel hotel10 = new Hotel("Aparthotel Adagio Birmingham City Centre","0121 399 0500","https://www.adagio-city.com/gb/hotel-8117-aparthotel-adagio-birmingham-city-centre/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNjIzMDUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D","-1.888801932796513","52.4773625753563","131 Digbeth, Birmingham B5 6DR",city12,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/HolidayCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Birmingham/Aparthotel_Birmingham.jpeg");
         hotelRepository.save(hotel10);
 
         //Birmigham
@@ -222,7 +222,7 @@ public class DataLoader implements ApplicationRunner {
 
 
         //These are the hotels in Liverpool
-        Hotel hotel11 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/InnsideCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/England/Liverpool/Innside_Liverpool.jpeg");
+        Hotel hotel11 = new Hotel("INNSIDE Liverpool","0151 832 0960","https://www.melia.com/en/hotels/united-kingdom/liverpool/innside-liverpool/index.htm?utm_medium=organic&utm_source=uberall&utm_content=dynamic","-2.9944098777745354","53.41024421444565","43 Old Hall St, Liverpool L3 9PP",city13,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/InnsideCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/England/Liverpool/Innside_Liverpool.jpeg");
         hotelRepository.save(hotel11);
 
         //Hotel in Liverpool
@@ -242,7 +242,7 @@ public class DataLoader implements ApplicationRunner {
         cityRepository.save(city16);
 
         //These are the hotels in Cardiff
-        Hotel hotel12 = new Hotel("Homefield Holidays","(+44) 01495 764212","https://homefield.wales/"," -2.866228647627431","51.9165695231888","Grosmont, Abergavenny NP7 8EP",city14,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/HomefieldCollage.jpg","");
+        Hotel hotel12 = new Hotel("Homefield Holidays","(+44) 01495 764212","https://homefield.wales/"," -2.866228647627431","51.9165695231888","Grosmont, Abergavenny NP7 8EP",city14,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/HomefieldCollage.jpg","https://github.com/elicodes89/BeyondTravelling/blob/features/working_on_map/beyond_travelling/client/new_app/src/regions/Wales/Cardiff/cardiff_hotel.jpeg?raw=true");
         hotelRepository.save(hotel12);
 
         //Cardiff
@@ -319,7 +319,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description36);
         Comment description37 = new Comment("Exciting events in Dublin available : for example at the Little Museum, an Irish Sign Language Tour – click here https://www.littlemuseum.ie/irish-sign-language-tour",hotel15);
         commentRepository.save(description37);
-        
+
         //This is a hotel in Belfast
         Hotel hotel16 = new Hotel("Meldron Belfast ","+35 02896001680","https://www.maldronhotelbelfastcity.com/room","-5.932631321052927","54.594818490728684","20 Brunswick Street Belfast",city6,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/MaldronCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Belfast/maldron1.jpeg");
         hotelRepository.save(hotel16);
@@ -333,9 +333,9 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description40);
         Comment description41 = new Comment("Very wheelchair accessible, visual and vibration alarm, Braille in elevator, Loop System at reception. ",hotel16);
         commentRepository.save(description41);
-        
+
         //This is a hotel in Galway
-        Hotel hotel17 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/features/db_working/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
+        Hotel hotel17 = new Hotel("The Dean","+353 (0)91 749 200","https://thedean.ie/galway","-9.0467412975213","53.277101326967795","Galway 80 Prospect Hill, Galway",city7,"https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/TheDeanCollage.jpg","https://raw.githubusercontent.com/elicodes89/BeyondTravelling/develop/beyond_travelling/client/new_app/src/regions/Ireland/Galway/The%20dean%20galway.jpeg");
         hotelRepository.save(hotel17);
 
         //Galway Ireland
@@ -366,124 +366,127 @@ public class DataLoader implements ApplicationRunner {
 
         //This is the section for videos these line can be deleted!!!
         //Welcome to Beyond Travelling
-        Video vide1 = new Video("https://www.youtube.com/embed/swyWGfjBbAA", hotel15);
+        Video vide1 = new Video("https://www.youtube.com/embed/NbkQvmhE-JE", hotel15);
         videoRepository.save(vide1);
         //Welcome to the deaf friendly Crowne Plaza Hotel Dublin
-        Video vide2 = new Video("https://www.youtube.com/embed/AZlVAc9Ip8I", hotel15);
+        Video vide2 = new Video("https://www.youtube.com/embed/pGh1fp_sjUg", hotel15);
         videoRepository.save(vide2);
         //This Hotel is near a hospital
-        Video vide3 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel15);
+        Video vide3 = new Video("https://www.youtube.com/embed/IAwRYWODBfQ", hotel15);
         videoRepository.save(vide3);
         //Click below for more BSL content
-        Video vide4 = new Video("https://www.youtube.com/embed/9EI1JkhlhOI", hotel15);
+        Video vide4 = new Video("https://www.youtube.com/embed/mFE_UTp1TeQ", hotel15);
         videoRepository.save(vide4);
         //This hotel has a 24 hour reception
-        Video vide5 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel15);
+        Video vide5 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel15);
         videoRepository.save(vide5);
         //This hotel has visual fire alarms
-        Video vide6 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel15);
+        Video vide6 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel15);
         videoRepository.save(vide6);
-        //This video is wheelchair accessible
-        Video vide7 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel15);
+        //Click on the hotel link for more information
+        Video vide7 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel15);
         videoRepository.save(vide7);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide8 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel15);
+        //Hotel has captioned Tv
+        Video vide8 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel15);
         videoRepository.save(vide8);
+        //Full english breakfast
+        Video video39 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel15);
+        videoRepository.save(video39);
 
-        //Video
-        Video vide9 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel1);
+        //Video --  //Hotel has captioned Tv
+        Video vide9 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel1);
         videoRepository.save(vide9);
         //This hotel has a 24 hour reception
-        Video vide10 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel1);
+        Video vide10 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel1);
         videoRepository.save(vide10);
         //This hotel has visual fire alarms
-        Video vide11 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel1);
+        Video vide11 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel1);
         videoRepository.save(vide11);
-        //This video is wheelchair accessible
-        Video vide12 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel1);
+        //Click on the link for more info
+        Video vide12 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel1);
         videoRepository.save(vide12);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide13 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel1);
+        //Full english breakfast
+        Video vide13 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel1);
         videoRepository.save(vide13);
 
-        //Hotel 2
-        Video vide14 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel8);
+        //Hotel 2 --  //Hotel has captioned Tv
+        Video vide14 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel8);
         videoRepository.save(vide14);
         //This hotel has a 24 hour reception
-        Video vide15 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel8);
+        Video vide15 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel8);
         videoRepository.save(vide15);
         //This hotel has visual fire alarms
-        Video vide16 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel8 );
+        Video vide16 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel8 );
         videoRepository.save(vide16);
-        //This video is wheelchair accessible
-        Video vide17 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel8);
+        //Click ont he link for more info
+        Video vide17 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel8);
         videoRepository.save(vide17);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide18 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel8);
+        //Full english breakfast
+        Video vide18 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel8);
         videoRepository.save(vide18);
 
-        //Hotel 3
-        Video vide19 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel3);
+        //Hotel 3 --  //Hotel has captioned Tv
+        Video vide19 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel3);
         videoRepository.save(vide19);
         //This hotel has a 24 hour reception
-        Video vide20 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel3);
+        Video vide20 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel3);
         videoRepository.save(vide20);
         //This hotel has visual fire alarms
-        Video vide21 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel3);
+        Video vide21 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel3);
         videoRepository.save(vide21);
-        //This video is wheelchair accessible
-        Video vide22 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel3);
+        //Click here for more info
+        Video vide22 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel3);
         videoRepository.save(vide22);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide23 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel3);
+        //Full english breakfast
+        Video vide23 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel3);
         videoRepository.save(vide23);
 
-        //Hotel 4
-        Video vide24 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY",hotel13);
+        //Hotel 4 --  //Hotel has captioned Tv
+        Video vide24 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel13);
         videoRepository.save(vide24);
         //This hotel has a 24 hour reception
-        Video vide25 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel13);
+        Video vide25 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel13);
         videoRepository.save(vide25);
         //This hotel has visual fire alarms
-        Video vide26 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel13);
+        Video vide26 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel13);
         videoRepository.save(vide26);
-        //This video is wheelchair accessible
-        Video vide27 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA",hotel13);
+        //Click here for more info
+        Video vide27 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel13);
         videoRepository.save(vide27);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide28 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel13);
+        //Full english breakfast
+        Video vide28 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel13);
         videoRepository.save(vide28);
 
-        //Hotel 5
-        Video vide29 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY", hotel18);
+        //Hotel 5 --  //Hotel has captioned Tv
+        Video vide29 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel18);
         videoRepository.save(vide29);
         //This hotel has a 24 hour reception
-        Video vide30 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw", hotel18);
+        Video vide30 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel18);
         videoRepository.save(vide30);
         //This hotel has visual fire alarms
-        Video vide31 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg",hotel18);
+        Video vide31 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel18);
         videoRepository.save(vide31);
-        //This video is wheelchair accessible
-        Video vide32 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA", hotel18);
+        //Click here for more info
+        Video vide32 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel18);
         videoRepository.save(vide32);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide33 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk", hotel18);
+        //Full english breakfast
+        Video vide33 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel18);
         videoRepository.save(vide33);
 
-        //Hotel 6
-        Video vide34 = new Video("https://www.youtube.com/embed/Wo-zruz4_zY",hotel17);
+        //Hotel 6 --  //Hotel has captioned Tv
+        Video vide34 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel17);
         videoRepository.save(vide34);
         //This hotel has a 24 hour reception
-        Video vide35 = new Video("https://www.youtube.com/embed/UBn9Kw6zjSw",hotel17);
+        Video vide35 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel17);
         videoRepository.save(vide35);
         //This hotel has visual fire alarms
-        Video vide36 = new Video("https://www.youtube.com/embed/s0NFHo2RyMg", hotel17);
+        Video vide36 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel17);
         videoRepository.save(vide36);
-        //This video is wheelchair accessible
-        Video vide37 = new Video("https://www.youtube.com/embed/bwtvvf-EzfA",hotel17);
+        //Click here for more info
+        Video vide37 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel17);
         videoRepository.save(vide37);
-        //Bathroom doors are wider than 32 inch and have grab rails
-        Video vide38 = new Video("https://www.youtube.com/embed/YzHqL7ZXnjk",hotel17);
+        //Full english breakfast
+        Video vide38 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel17);
         videoRepository.save(vide38);
 
     }

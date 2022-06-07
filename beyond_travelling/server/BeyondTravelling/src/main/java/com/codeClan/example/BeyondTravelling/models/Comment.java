@@ -52,4 +52,5 @@ public class Comment {
         this.hotel = hotel;
     }
 
+
 }
