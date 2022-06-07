@@ -48,9 +48,9 @@ if (selectedCityHotel != null){
     )  
 } else if(selectedCityHotel != null){
   return (
-  <div>
+  <div className = "row">
+    <div className = "col-6">
     <h2>{selectedCityHotel.hotel_name}</h2> 
-{/* make sure you fix this elisol */}
     <img src= {selectedCityHotel.img} alt="hotelimg" width="700px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
     <li>Contact Number: {selectedCityHotel.contact_number}</li>
@@ -65,12 +65,13 @@ if (selectedCityHotel != null){
     <li>{selectedCityHotel.comments[4].name}</li>
     </div>
     <br/>
-
-
+    <div className = "col-6">
     <div className = "hotel_video">
       {/* if videosExists does not exists then...  */}
     {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
     </div>
+    </div>
+  </div>
   </div>
   
   )  
