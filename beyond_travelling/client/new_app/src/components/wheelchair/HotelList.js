@@ -14,6 +14,10 @@ const HotelList = ({regions}) => {
         const onRegionClick = function(region){
         setSelectedRegion(region);
     }
+
+    const onBackButton = function () {
+      setSelectedRegion(null);
+    }
     
   
   if (selectedRegion) {
@@ -23,6 +27,7 @@ const HotelList = ({regions}) => {
       <ul>
       <h3>Where would you like to go?</h3>
         <HotelDetail region={selectedRegion}/>
+        <button Class = "button_2" onClick={() => onBackButton()}>Choose another Region</button>
       </ul>
     </div>
     );
