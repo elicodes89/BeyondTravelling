@@ -35,7 +35,6 @@ const onBackButton = function () {
       <h3>Great! You can now navigate through the hotels.</h3>
       <CityHotels selectedCity={selectedCity}/>
       <button Class = "button_1" onClick={() => onBackButton()}>Choose another city</button>
-      
       </>
     )
   }
@@ -48,9 +47,7 @@ const onBackButton = function () {
 
       </>
     )
-  }
- 
-  
+  }  
 }
 
 export default HotelDetail;

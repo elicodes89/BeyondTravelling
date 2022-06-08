@@ -15,11 +15,6 @@ let videoExists = false;
 
   })
 
-  function task(){
-    console.log(cityHotelsList)
-  }
-  setTimeout(task, 1000);
-
 
   // we can add more functionality to this function
   const onCityClick = function(cityHotel){
