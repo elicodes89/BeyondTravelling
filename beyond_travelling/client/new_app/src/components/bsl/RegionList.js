@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player';
 import { Card, Row, Ratio } from 'react-bootstrap';
 
 
-const HotelList = ({regions}) => {
+const RegionList = ({regions}) => {
   const [selectedRegion, setSelectedRegion] = useState(null);
 
       const regionsItems = regions.map((region, index) => {
@@ -52,4 +52,4 @@ const HotelList = ({regions}) => {
     )}
 };
 
-export default HotelList;
+export default RegionList;

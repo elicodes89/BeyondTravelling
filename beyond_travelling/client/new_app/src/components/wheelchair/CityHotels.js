@@ -16,12 +16,6 @@ let videoExists = false;
 
   })
 
-  function task(){
-    console.log(cityHotelsList)
-  }
-  setTimeout(task, 1000);
-
-
   // we can add more functionality to this function
   const onCityClick = function(cityHotel){
     setSelectedCityHotel(cityHotel);
@@ -44,6 +38,7 @@ if (selectedCityHotel != null){
       </>
     )  
 } else if(selectedCityHotel != null){
+
   return (
     <div className = "container">
     <div className = "flex-child row">
@@ -59,13 +54,16 @@ if (selectedCityHotel != null){
     <li>{selectedCityHotel.comments[1].name}</li>
     <li>{selectedCityHotel.comments[2].name}</li>
     <li>{selectedCityHotel.comments[3].name}</li>
-    <br/>
     </div>
+    <br/>
     </div>
     <div className = "flex-child row2">
     <div className = "hotel_video">
       {/* if videosExists does not exists then...  */}
     {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    <br></br>
+    {!videoExists && selectedCityHotel.videos[1] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    {/* <Button variant="light" onClick = { () => {} }>GO BACK</Button> */}
     </div>
     </div>
   </div>
@@ -77,6 +75,6 @@ if (selectedCityHotel != null){
     </>
   );
 };
-};
+}
 
 export default CityHotels;

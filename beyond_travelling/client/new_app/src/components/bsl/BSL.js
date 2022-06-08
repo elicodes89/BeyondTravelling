@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import HotelList from './HotelList';
-import './BSL.css';
-import { Card, Row } from 'react-bootstrap';
+import RegionList from './RegionList';
+import ReactPlayer from 'react-player';
+import { Card, Col, Row, Ratio, Container } from 'react-bootstrap';
+import { alignProperty } from '@mui/material/styles/cssUtils';
 
 
 const BSL = () => {
@@ -29,7 +30,7 @@ const BSL = () => {
         <>
         <Row xs={'auto'} md={'auto'} className='hotel_card'>
         <Card>
-            <Card.Body><HotelList regions = {regions}/></Card.Body>
+            <Card.Body><RegionList regions = {regions}/></Card.Body>
         </Card>
         </Row>
         
