@@ -15,10 +15,10 @@ const AccessibleHotels = () => {
         .then(regions => setRegions(regions))
     }
 
-    function task(){
-        console.log(getRegions)
-    }
-    setTimeout(task, 1000);
+    // function task(){
+    //     console.log(getRegions)
+    // }
+    // setTimeout(task, 1000);
 
     return (
         <>     
