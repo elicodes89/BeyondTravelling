@@ -59,6 +59,7 @@ if (selectedCityHotel != null){
     <li>{selectedCityHotel.comments[1].name}</li>
     <li>{selectedCityHotel.comments[2].name}</li>
     <li>{selectedCityHotel.comments[3].name}</li>
+    {/* <li>{selectedCityHotel.comments[4].name}</li> needs to be uncommented cause some hotels don't have 4 comments and page breaks otherwise. */}
     </div>
     <br/>
     <div className = "col">
