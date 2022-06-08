@@ -46,7 +46,7 @@ if (selectedCityHotel != null){
 } else if(selectedCityHotel != null){
   return (
   <div className = "row">
-    <div className = "col-6">
+    <div className = "col">
     <h2>{selectedCityHotel.hotel_name}</h2> 
     <img src= {selectedCityHotel.img} alt="hotelimg" height = "550px" width="600px"/>
     <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
@@ -61,7 +61,7 @@ if (selectedCityHotel != null){
     <li>{selectedCityHotel.comments[3].name}</li>
     </div>
     <br/>
-    <div className = "col-6">
+    <div className = "col">
     <div className = "hotel_video">
       {/* if videosExists does not exists then...  */}
     {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
