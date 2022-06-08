@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
-// import './MainPage.css';
 
 const AccessibleHotels = () => {
     const [regions, setRegions] = useState([]);
@@ -14,11 +13,6 @@ const AccessibleHotels = () => {
         .then(res => res.json())
         .then(regions => setRegions(regions))
     }
-
-    // function task(){
-    //     console.log(getRegions)
-    // }
-    // setTimeout(task, 1000);
 
     return (
         <>     

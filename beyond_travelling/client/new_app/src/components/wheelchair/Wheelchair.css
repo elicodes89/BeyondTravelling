@@ -16,3 +16,54 @@ span.hotelName{
 .flex-child:first-child{
     margin-right: 20px;   
 }
+
+.bookingLink{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.hotelDetails{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+.noBoldText{
+    font-weight: normal;
+}
+
+.textToAlign{
+    text-align: left;
+}
+
+.hotel_video{
+    font-size: 20px;
+    padding-top: 84px;
+}
+
+iframe{
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.button_1 {
+    margin-inline: 60px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: black;
+    background-color: #FFBD58;
+    padding: 15px;
+}
+.button_2 {
+    text-align: center;
+    margin-inline: 60px;
+    border-radius: 20px;
+    border-color: black;
+    background-color: #FFBD58;
+    padding: 15px;
+}
+

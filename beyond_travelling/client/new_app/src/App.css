@@ -32,7 +32,6 @@
   display: flex;
   align-items: center;
   margin-left: 25%;
-  
 }
 
 .hotel_card{
@@ -40,7 +39,6 @@
   flex-direction:row;
   margin: 0 auto;
   float: none;
-
 }
 
 
