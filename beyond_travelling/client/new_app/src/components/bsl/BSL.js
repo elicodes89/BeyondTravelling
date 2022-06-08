@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import HotelList from './HotelList';
-import ReactPlayer from 'react-player';
-import { Card, Col, Row, Ratio, Container } from 'react-bootstrap';
-import { alignProperty } from '@mui/material/styles/cssUtils';
+import './BSL.css';
+import { Card, Row } from 'react-bootstrap';
 
 
 const BSL = () => {
@@ -35,7 +34,7 @@ const BSL = () => {
         </Row>
         
         <br></br>
-        <Card.Body>
+        {/* <Card.Body>
         <div className='intro_video' style={{width: 700, height: 'auto'}}>
         <Ratio aspectRatio="16x9">
             <ReactPlayer 
@@ -43,9 +42,9 @@ const BSL = () => {
             controls={true}/>
         </Ratio>
         </div>
-        </Card.Body>
+        </Card.Body> */}
         </>
-      
+
     );
 };
 
