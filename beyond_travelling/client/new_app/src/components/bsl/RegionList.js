@@ -2,7 +2,7 @@ import React , { useState } from 'react';
 import HotelDetail from './HotelDetail';
 import Button from 'react-bootstrap/Button';
 
-const HotelList = ({regions}) => {
+const RegionList = ({regions}) => {
   const [selectedRegion, setSelectedRegion] = useState(null);
 
       const regionsItems = regions.map((region, index) => {
@@ -38,4 +38,4 @@ const HotelList = ({regions}) => {
     )}
 };
 
-export default HotelList;
+export default RegionList;
