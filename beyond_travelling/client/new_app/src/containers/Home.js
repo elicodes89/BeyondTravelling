@@ -1,10 +1,8 @@
 import React , { useState } from 'react';
-// import Header from '../components/Header';
 import './Home.css';
 import Wheelchair from '../access_icons/wheelchair.png';
 import Sign from '../access_icons/sign.png';
 import BSL from '../components/bsl/BSL';
-import Button from 'react-bootstrap/Button';
 import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
 
 
@@ -34,7 +32,6 @@ return (
       <>
       {/* <Header /> */}
       <AccessibleHotels />
-      <Button variant="light" onClick = { () => {setWheelchair(false)} }>GO BACK</Button>
       </>
   
       );
@@ -43,7 +40,6 @@ return (
     return (
       <>
       <BSL />
-      <Button variant="light" onClick = { () => {setBsl(false)} }>GO BACK</Button>
       </>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
+import './BSL.css';
 
 const CityHotels = (props) => {
   const [selectedCityHotel, setSelectedCityHotel] = useState(null);
@@ -43,30 +44,37 @@ if (selectedCityHotel != null){
     )  
 } else if(selectedCityHotel != null){
   return (
-  <div className = "row">
-    <div className = "col-6">
+    <div className = "container">
+    <div className = "flex-child row">
+    <div className = "col">
     <h2>{selectedCityHotel.hotel_name}</h2> 
+    <li className = "bookingLink"><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
+
     <img src= {selectedCityHotel.img} alt="hotelimg" height = "550px" width="600px"/>
-    <li><a href= {selectedCityHotel.website} target="_blank">Click here to make a booking</a></li>
-    <li>Contact Number: {selectedCityHotel.contact_number}</li>
-    <li>Address: {selectedCityHotel.address}</li>
+    <div className = "hotelDetails">
+    <li className = "boldText">Contact Number: <span className="noBoldText">{selectedCityHotel.contact_number}</span></li>
+    <li className = "boldText">Address: <span className="noBoldText">{selectedCityHotel.address}</span></li>
     <br/>
-    <div className="hotel_description">
     <h4>Some perks about this hotel:</h4>
+    <div className='textToAlign'>
     <li>{selectedCityHotel.comments[0].name}</li>
     <li>{selectedCityHotel.comments[1].name}</li>
     <li>{selectedCityHotel.comments[2].name}</li>
     <li>{selectedCityHotel.comments[3].name}</li>
     </div>
+    </div>
+    </div>
     <br/>
-    <div className = "col-6">
+    </div>
+    <div className = "flex-child row2">
     <div className = "hotel_video">
       {/* if videosExists does not exists then...  */}
-    {!videoExists && selectedCityHotel.videos[1] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
     {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    <br/>
+    {!videoExists && selectedCityHotel.videos[1] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    {/* <Button variant="light" onClick = { () => {} }>GO BACK</Button> */}
     </div>
     </div>
-  </div>
   </div>
   )  
 } else {
