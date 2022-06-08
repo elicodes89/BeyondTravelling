@@ -1,0 +1,15 @@
+.main-footer{
+    color: rgb(47, 45, 45);
+    background-color: #FFBD58;
+    padding-top: -50vh;
+    padding:1.5%;
+    margin-top: auto;
+    position: sticky;
+    width:100%;
+    font-size: 22px;
+    text-align: center;
+}
+
+li{
+list-style: none;
+}

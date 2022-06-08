@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# /server/db/BeyondTravelling_db.mv.db
+/beyond_travelling/server/db/BeyondTravelling_db.mv.db

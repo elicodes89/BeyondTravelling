@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding-bottom: 50px;
+  height: 100vh;
 }
 
-/* .wheelchair{
+.wheelchair{
   width: 10rem;
   height: 10rem;
 }
@@ -10,17 +14,32 @@
 .bsl_sign{
   width: 10rem;
   height: 10rem;
-} */
+}
 
-flex-container{
-  display: flex;
+.flex-container{
+  justify-items: left;
+  display: inline-flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  flex-direction: column;
 }
 
-.flex-container > img{
-  width: 300px;
-  height: 300px;
-  display: ;
-  /* flex-shrink: 1; */
+
+/* this is the header */
+.justify-content-left span{
+  font-size: 40px;
 }
+
+.intro_video{
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.hotel_card{
+  display: flex;
+  flex-direction:row;
+  margin: 0 auto;
+  float: none;
+}
+
+
