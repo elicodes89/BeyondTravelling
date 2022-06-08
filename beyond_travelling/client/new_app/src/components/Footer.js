@@ -40,8 +40,7 @@ const Footer = () => {
                 <hr />
                 <div className="row">
                     <p className='col-sm'>
-                        &copy;{new Date().getFullYear()} BeyondTravelling | All rights reserved | Created by Annika, Elisol, Mate and friendly support from Paul, Qualified BSL Interpreter
-                    </p>
+                        &copy;{new Date().getFullYear()} BeyondTravelling | All rights reserved | Created by Annika, Elisol, Mate and friendly support from Paul, Qualified BSL Interpreter</p>
                 </div>
             </div>
             
