@@ -29,10 +29,8 @@ const onBackButton = function () {
   } else if(selectedCity){
     return (
       <>
-      <h2>Please choose hotel</h2>
       <CityHotels selectedCity={selectedCity}/>
       <button Class = "button_1" onClick={() => onBackButton()}>Choose another city</button>
-
       </>
     )
   }

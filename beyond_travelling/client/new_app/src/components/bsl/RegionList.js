@@ -43,7 +43,7 @@ const RegionList = ({regions}) => {
       {/* <h1>Hello from BSL hotel list</h1> */}
       {regionsItems}
     </ul>
-    <Card.Body>
+ 
       <div className='intro_video' style={{width: 700, height: 'auto'}}>
         <Ratio aspectRatio="16x9">
           <ReactPlayer
@@ -51,7 +51,6 @@ const RegionList = ({regions}) => {
           controls={true}/>
           </Ratio>
           </div>
-    </Card.Body>
   </div>
   
     )}
