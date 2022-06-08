@@ -2,14 +2,16 @@ import React , { useState } from 'react';
 import HotelDetail from './HotelDetail';
 import Button from 'react-bootstrap/Button';
 import ReactPlayer from 'react-player';
-import { Card, Row, Ratio } from 'react-bootstrap';
+import { Ratio } from 'react-bootstrap';
 
 
 const RegionList = ({regions}) => {
   const [selectedRegion, setSelectedRegion] = useState(null);
 
       const regionsItems = regions.map((region, index) => {
-        return <Button variant="light" onClick = {() => onRegionClick(region) }><img src= {region.img} alt= "" width = "330px" height = "320px" /></Button>
+        return (
+        <Button variant="light" onClick = {() => onRegionClick(region) }><img className = "listOfRegions" src= {region.img} alt= "listofregions" width = "330px" height = "320px" /></Button>
+        )
   
     })
 
@@ -39,8 +41,6 @@ const RegionList = ({regions}) => {
     return (      
     <div>
     <ul>
-    <h2>Please choose region</h2>
-      {/* <h1>Hello from BSL hotel list</h1> */}
       {regionsItems}
     </ul>
  

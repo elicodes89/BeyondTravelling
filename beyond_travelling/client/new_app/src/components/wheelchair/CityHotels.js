@@ -12,7 +12,7 @@ const cityHotels = selectedCity.hotels;
 let videoExists = false;
 
   const cityHotelsList = cityHotels.map((cityHotel, index) => {
-    return <Button variant="white" onClick = {() => onCityClick(cityHotel) }><span className = "hotelName">{cityHotel.hotel_name}</span><br/><img src={cityHotel.img2} alt= "hotel_collage" height = "550px" width = "550px" /></Button>
+    return <Button variant="white" onClick = {() => onCityClick(cityHotel) }><span className = "hotelName">{cityHotel.hotel_name}</span><br/><img className = "listOfRegions" src={cityHotel.img2} alt= "hotel_collage" height = "550px" width = "550px" /></Button>
 
   })
 

@@ -3,11 +3,12 @@
     background-color: #FFBD58;
     padding-top: -50vh;
     padding:1.5%;
-    margin-top: auto;
+    margin-top: 180px;
     position: sticky;
     width:100%;
     font-size: 22px;
     text-align: center;
+    min-height: 50px;
 }
 
 li{

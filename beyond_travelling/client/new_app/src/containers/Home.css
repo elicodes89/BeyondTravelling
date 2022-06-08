@@ -1,8 +1,7 @@
 div.title {
     text-align: center;
     font-size: large;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 50px;
     border-color: black;
     text-shadow: 1px 1px 1px black;
 }
@@ -14,17 +13,17 @@ div.title {
 
 div.homeButtons{
     /* do not delete these 3 please */
-    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-color: white;
-    border-style: solid;
-    border-radius: 30px;
+    padding-bottom: -90px;
+    padding-top: -90px;
+
 }
 
 .homeImage{
-padding-top: 6%;
+padding-top: 4%;
 }
 

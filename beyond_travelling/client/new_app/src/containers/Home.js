@@ -21,7 +21,7 @@ return (
     <h2>YOUR TRAVEL APP FOR ACCESSIBLE HOLIDAYS</h2>
     </div>
     <div className='homeButtons'>
-    <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
+    <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="600"/>
     <img className = "homeImage1" onClick = { () => {setBsl(true)} } src={SigningLady} alt='signimg' width="500" height="500"/>
     </div>
   </>
@@ -32,7 +32,6 @@ return (
 
   return (
       <>
-      {/* <Header /> */}
       <AccessibleHotels />
       </>
   

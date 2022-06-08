@@ -8,7 +8,7 @@ const HotelDetail = (props) => {
   const cities = region.cities;
 
   const citiesList = cities.map((city, index) => {
-    return <Button variant="light" onClick = {() => onCityClick(city) }><img src= {city.img} alt= "citiesimages" width = "330px" height = "320px" /></Button>
+    return <Button variant="light" onClick = {() => onCityClick(city) }><img className = "listOfRegions" src= {city.img} alt= "citiesimages" width = "330px" height = "320px" /></Button>
   })
   // console.log(cities);
 
@@ -32,7 +32,6 @@ const onBackButton = function () {
   } else if(selectedCity){
     return (
       <>
-      <h3>Great! You can now navigate through the hotels.</h3>
       <CityHotels selectedCity={selectedCity}/>
       <button Class = "button_1" onClick={() => onBackButton()}>Choose another city</button>
       </>
