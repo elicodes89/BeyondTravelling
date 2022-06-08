@@ -2,7 +2,7 @@ import React , { useState } from 'react';
 import './Home.css';
 import Wheelchair from '../access_icons/wheelchair.png';
 // import Sign from '../access_icons/sign.png';
-import Signinghello from '../access_icons/signinghello.gif';
+import SigningLady from '../access_icons/signinglady.gif';
 
 import BSL from '../components/bsl/BSL';
 import AccessibleHotels from '../components/wheelchair/AccessibleHotels';
@@ -21,8 +21,8 @@ return (
     <h2>YOUR TRAVEL APP FOR ACCESSIBLE HOLIDAYS</h2>
     </div>
     <div className='homeButtons'>
-    <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="450"/>
-    <img className = "homeImage" onClick = { () => {setBsl(true)} } src={Signinghello} alt='signimg' width="500" height="450" margin-bottom='0%'/>
+    <img className = "homeImage" onClick = { () => {setWheelchair(true)} } src={Wheelchair} alt='wheelchairimg' width="500" height="500"/>
+    <img className = "homeImage1" onClick = { () => {setBsl(true)} } src={SigningLady} alt='signimg' width="500" height="500"/>
     </div>
   </>
 
