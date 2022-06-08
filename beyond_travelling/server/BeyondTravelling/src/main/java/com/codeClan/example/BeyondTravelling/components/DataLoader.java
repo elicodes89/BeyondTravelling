@@ -365,6 +365,7 @@ public class DataLoader implements ApplicationRunner {
         commentRepository.save(description50);
 
         //This is the section for videos these line can be deleted!!!
+        //dublin
         //Welcome to Beyond Travelling
         Video vide1 = new Video("https://www.youtube.com/embed/NbkQvmhE-JE", hotel15);
         videoRepository.save(vide1);
@@ -374,9 +375,9 @@ public class DataLoader implements ApplicationRunner {
         //This Hotel is near a hospital
         Video vide3 = new Video("https://www.youtube.com/embed/IAwRYWODBfQ", hotel15);
         videoRepository.save(vide3);
-        //Click below for more BSL content
-        Video vide4 = new Video("https://www.youtube.com/embed/mFE_UTp1TeQ", hotel15);
-        videoRepository.save(vide4);
+//        //Click below for more BSL content
+//        Video vide4 = new Video("https://www.youtube.com/embed/mFE_UTp1TeQ", hotel15);
+//        videoRepository.save(vide4);
         //This hotel has a 24 hour reception
         Video vide5 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel15);
         videoRepository.save(vide5);
@@ -393,57 +394,63 @@ public class DataLoader implements ApplicationRunner {
         Video video39 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel15);
         videoRepository.save(video39);
 
+        //Edinburgh Eden Lock
         //Video --  //Hotel has captioned Tv
-        Video vide9 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel1);
-        videoRepository.save(vide9);
+//        Video vide9 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel1);
+//        videoRepository.save(vide9);
         //This hotel has a 24 hour reception
-        Video vide10 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel1);
-        videoRepository.save(vide10);
+//        Video vide10 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel1);
+//        videoRepository.save(vide10);
         //This hotel has visual fire alarms
         Video vide11 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel1);
         videoRepository.save(vide11);
         //Click on the link for more info
-        Video vide12 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel1);
-        videoRepository.save(vide12);
+//        Video vide12 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel1);
+//        videoRepository.save(vide12);
         //Full english breakfast
         Video vide13 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel1);
         videoRepository.save(vide13);
 
+
+        //London
         //Hotel 2 --  //Hotel has captioned Tv
         Video vide14 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel8);
         videoRepository.save(vide14);
         //This hotel has a 24 hour reception
-        Video vide15 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel8);
-        videoRepository.save(vide15);
+//        Video vide15 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel8);
+//        videoRepository.save(vide15);
         //This hotel has visual fire alarms
-        Video vide16 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel8 );
-        videoRepository.save(vide16);
-        //Click ont he link for more info
-        Video vide17 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel8);
-        videoRepository.save(vide17);
+//        Video vide16 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel8 );
+//        videoRepository.save(vide16);
+//        //Click ont he link for more info
+//        Video vide17 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel8);
+//        videoRepository.save(vide17);
         //Full english breakfast
         Video vide18 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel8);
         videoRepository.save(vide18);
 
+
+        //St Andrews
         //Hotel 3 --  //Hotel has captioned Tv
-        Video vide19 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel3);
-        videoRepository.save(vide19);
+//        Video vide19 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel3);
+//        videoRepository.save(vide19);
         //This hotel has a 24 hour reception
         Video vide20 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel3);
         videoRepository.save(vide20);
         //This hotel has visual fire alarms
-        Video vide21 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel3);
-        videoRepository.save(vide21);
+//        Video vide21 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel3);
+//        videoRepository.save(vide21);
         //Click here for more info
-        Video vide22 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel3);
-        videoRepository.save(vide22);
+//        Video vide22 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel3);
+//        videoRepository.save(vide22);
         //Full english breakfast
-        Video vide23 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel3);
-        videoRepository.save(vide23);
+//        Video vide23 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel3);
+//        videoRepository.save(vide23);
 
+        //Swansee
         //Hotel 4 --  //Hotel has captioned Tv
-        Video vide24 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel13);
-        videoRepository.save(vide24);
+//        Video vide24 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel13);
+//        videoRepository.save(vide24);
         //This hotel has a 24 hour reception
         Video vide25 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel13);
         videoRepository.save(vide25);
@@ -451,40 +458,43 @@ public class DataLoader implements ApplicationRunner {
         Video vide26 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel13);
         videoRepository.save(vide26);
         //Click here for more info
-        Video vide27 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel13);
-        videoRepository.save(vide27);
+//        Video vide27 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel13);
+//        videoRepository.save(vide27);
         //Full english breakfast
-        Video vide28 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel13);
-        videoRepository.save(vide28);
+//        Video vide28 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel13);
+//        videoRepository.save(vide28);
 
+
+        //Donegal
         //Hotel 5 --  //Hotel has captioned Tv
-        Video vide29 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel18);
-        videoRepository.save(vide29);
+//        Video vide29 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q", hotel18);
+//        videoRepository.save(vide29);
         //This hotel has a 24 hour reception
-        Video vide30 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel18);
-        videoRepository.save(vide30);
+//        Video vide30 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc", hotel18);
+//        videoRepository.save(vide30);
         //This hotel has visual fire alarms
         Video vide31 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk",hotel18);
         videoRepository.save(vide31);
         //Click here for more info
-        Video vide32 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel18);
-        videoRepository.save(vide32);
+//        Video vide32 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw", hotel18);
+//        videoRepository.save(vide32);
         //Full english breakfast
         Video vide33 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M", hotel18);
         videoRepository.save(vide33);
 
+        //Galway
         //Hotel 6 --  //Hotel has captioned Tv
         Video vide34 = new Video("https://www.youtube.com/embed/DcYHxnPmL0Q",hotel17);
         videoRepository.save(vide34);
         //This hotel has a 24 hour reception
-        Video vide35 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel17);
-        videoRepository.save(vide35);
+//        Video vide35 = new Video("https://www.youtube.com/embed/rV9HYuDxmVc",hotel17);
+//        videoRepository.save(vide35);
         //This hotel has visual fire alarms
-        Video vide36 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel17);
-        videoRepository.save(vide36);
+//        Video vide36 = new Video("https://www.youtube.com/embed/3qsPgjXnCEk", hotel17);
+//        videoRepository.save(vide36);
         //Click here for more info
-        Video vide37 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel17);
-        videoRepository.save(vide37);
+//        Video vide37 = new Video("https://www.youtube.com/embed/Rsz_OYA3ABw",hotel17);
+//        videoRepository.save(vide37);
         //Full english breakfast
         Video vide38 = new Video("https://www.youtube.com/embed/Z8B1rQgmK8M",hotel17);
         videoRepository.save(vide38);
