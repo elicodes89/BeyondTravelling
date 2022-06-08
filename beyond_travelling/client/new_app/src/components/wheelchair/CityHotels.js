@@ -65,6 +65,9 @@ if (selectedCityHotel != null){
     <div className = "hotel_video">
       {/* if videosExists does not exists then...  */}
     {!videoExists && selectedCityHotel.videos[0] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[0].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    <br></br>
+    {!videoExists && selectedCityHotel.videos[1] != undefined ? <iframe width="560" height="315" src={selectedCityHotel.videos[1].name} title="Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> : null}
+    {/* <Button variant="light" onClick = { () => {} }>GO BACK</Button> */}
     </div>
     </div>
   </div>
