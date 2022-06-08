@@ -15,6 +15,10 @@ const HotelDetail = (props) => {
     setSelectedCity(city);
 }
 
+const onBackButton = function () {
+  setSelectedCity(null);
+}
+
   if (region != undefined && region.cities.length != 0 && !selectedCity) {
     return (
       <>
@@ -25,8 +29,8 @@ const HotelDetail = (props) => {
   } else if(selectedCity){
     return (
       <>
-      <h2>Please choose hotel</h2>
       <CityHotels selectedCity={selectedCity}/>
+      <button Class = "button_1" onClick={() => onBackButton()}>Choose another city</button>
       </>
     )
   }
